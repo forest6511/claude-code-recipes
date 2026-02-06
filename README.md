@@ -6,6 +6,8 @@
 
 各ディレクトリは書籍の章・レシピ番号に対応しています。必要なファイルをコピーして、ご自身のプロジェクトに適用してください。
 
+> **Note**: `.mcp.json`等の設定ファイルに含まれるAPIキーは`${BRAVE_API_KEY}`のようなプレースホルダーです。ご自身の環境変数に実際のキーを設定してから使用してください。
+
 ```bash
 # 例: レシピ01のCLAUDE.mdテンプレートをコピー
 cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./CLAUDE.md

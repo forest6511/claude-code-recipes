@@ -1,0 +1,29 @@
+# Environment variables (API keys)
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+dist/
+build/
+*.tgz
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Test output
+coverage/
+.nyc_output/
+*.log
