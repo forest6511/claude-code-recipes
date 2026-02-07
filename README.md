@@ -84,7 +84,7 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 |---|--------|------|-------------|
 | 35 | SKILL.mdの基本構造 | フロントマターとマークダウン本文の役割を理解する | [`recipe-35`](./ch07-skills-basics/recipe-35-basic-structure/) |
 | 36 | 初めてのカスタムSkills | コミットメッセージ生成とコード説明のSkillsを作成する | [`recipe-36`](./ch07-skills-basics/recipe-36-first-skill/) |
-| 37 | $ARGUMENTSで動的パラメータ | 引数展開と`!`command``でSkillsを動的にする | [`recipe-37`](./ch07-skills-basics/recipe-37-arguments/) |
+| 37 | $ARGUMENTSで動的パラメータ | 引数展開と`` !`command` ``でSkillsを動的にする | [`recipe-37`](./ch07-skills-basics/recipe-37-arguments/) |
 | 38 | context:forkでサブエージェント実行 | メインコンテキストを消費せず重い処理を分離実行 | [`recipe-38`](./ch07-skills-basics/recipe-38-context-fork/) |
 | 40 | コードレビューSkills | PRの差分を自動取得し複数の観点で体系的にレビュー | [`recipe-40`](./ch08/recipe-40/) |
 | 41 | TDD Skills | Red-Green-Refactorサイクルをガイドするテストファースト開発 | [`recipe-41`](./ch08/recipe-41/) |

@@ -7,7 +7,7 @@ Skillsの活性化率改善、動的コンテキスト注入、namespace設計�
 | # | レシピ | 説明 | サンプル |
 |---|--------|------|---------|
 | 48 | 活性化率を20%→84%に上げるテクニック | descriptionの書き方でSkillsの自動発動率を改善する | [recipe-48](./recipe-48/) |
-| 49 | `!`command``で動的コンテキストを注入する | 前処理メカニズムで実行時の情報を自動収集する | [recipe-49](./recipe-49/) |
+| 49 | `` !`command` ``で動的コンテキストを注入する | 前処理メカニズムで実行時の情報を自動収集する | [recipe-49](./recipe-49/) |
 | 50 | namespace設計 | プラグインのnamespace（plugin:skill-name）で名前衝突を回避する | [recipe-50](./recipe-50/) |
 | 51 | Skills内でMCPサーバーのツールを指定する | ServerName:tool_name形式でMCPツールを確実に呼び出す | [recipe-51](./recipe-51/) |
 | 52 | SLASH_COMMAND_TOOL_CHAR_BUDGETを管理する | キャラクターバジェットの仕組みと調整方法（概念説明中心） | - |

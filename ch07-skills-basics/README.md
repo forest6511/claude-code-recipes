@@ -8,7 +8,7 @@ Claude Codeの機能を拡張する`SKILL.md`ファイルのパターン集で�
 |---|--------|------|
 | 35 | [SKILL.mdの基本構造](./recipe-35-basic-structure/) | フロントマターとマークダウン本文の役割を理解する |
 | 36 | [初めてのカスタムSkills](./recipe-36-first-skill/) | コミットメッセージ生成とコード説明のSkillsを作成する |
-| 37 | [$ARGUMENTSで動的パラメータ](./recipe-37-arguments/) | 引数展開と`!`command``で動的なSkillsを作る |
+| 37 | [$ARGUMENTSで動的パラメータ](./recipe-37-arguments/) | 引数展開と`` !`command` ``で動的なSkillsを作る |
 | 38 | [context:forkでサブエージェント実行](./recipe-38-context-fork/) | メインコンテキストを消費せず重い処理を分離する |
 
 ## 使い方

@@ -1,6 +1,6 @@
 # レシピ37: $ARGUMENTSで動的パラメータを受け取るSkillsを作る
 
-引数展開（`$ARGUMENTS`、`$0`〜`$N`）と前処理コマンド（`!`command``）で動的に動作するSkillsの作成手法です。
+引数展開（`$ARGUMENTS`、`$0`〜`$N`）と前処理コマンド（`` !`command` ``）で動的に動作するSkillsの作成手法です。
 
 ## ファイル一覧
 
@@ -8,8 +8,8 @@
 |---------|------|
 | `fix-issue/SKILL.md` | `$ARGUMENTS`でIssue番号を受け取りバグ修正する |
 | `migrate-component/SKILL.md` | `$0`〜`$2`の位置引数でフレームワーク移行する |
-| `pr-review/SKILL.md` | `!`command``でPR差分を動的注入してレビューする |
-| `release-notes/SKILL.md` | 引数と`!`command``を組み合わせてリリースノートを生成する |
+| `pr-review/SKILL.md` | `` !`command` ``でPR差分を動的注入してレビューする |
+| `release-notes/SKILL.md` | 引数と`` !`command` ``を組み合わせてリリースノートを生成する |
 
 ## 使い方
 
