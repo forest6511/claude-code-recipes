@@ -32,7 +32,7 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | `ch13-hooks-basics/` | 第13章: Hooksの仕組みと基礎 | 4 |
 | `ch14-hooks-recipes/` | 第14章: Hooks活用レシピ | 8 |
 | [`ch15-workflows/`](./ch15-workflows/) | 第15章: プロジェクトワークフロー | 5 |
-| `ch16-power-user/` | 第16章: パワーユーザーTIPS集 | 5 |
+| [`ch16-power-user/`](./ch16-power-user/) | 第16章: パワーユーザーTIPS集 | 5 |
 | `shared/` | 共通テンプレート・設定 | - |
 
 ## レシピ対応表
@@ -149,9 +149,9 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 93 | CI/CDパイプライン | claude-code-actionとヘッドレスモードでCI/CDを自動化 | [`recipe-93`](./ch15-workflows/recipe-93-ci-cd/) |
 | 94 | Issue駆動開発 | GitHub Issue取得からブランチ作成・実装・PR作成まで一気通貫 | [`recipe-94`](./ch15-workflows/recipe-94-issue-driven/) |
 | 95 | マルチセッション・チーム開発 | Git Worktreeとセッション管理で並行開発とチーム共有を実現 | [`recipe-95`](./ch15-workflows/recipe-95-multi-session/) |
-| 97 | Docker隔離実行 | DockerとDevContainerでClaude Codeを安全に隔離 | `ch16-power-user/recipe-97-docker/` |
-| 98 | ヘッドレスモード | バッチ処理やCI環境でのヘッドレス実行 | `ch16-power-user/recipe-98-headless/` |
-| 100 | 究極のカスタマイズ戦略 | CLAUDE.md+Skills+Hooks+Agentsの統合設定テンプレート | `ch16-power-user/recipe-100-ultimate-setup/` |
+| 97 | Docker隔離実行 | DockerとDevContainerでClaude Codeを安全に隔離 | [`recipe-97`](./ch16-power-user/recipe-97-docker/) |
+| 98 | ヘッドレスモード | バッチ処理やCI環境でのヘッドレス実行 | [`recipe-98`](./ch16-power-user/recipe-98-headless/) |
+| 100 | 究極のカスタマイズ戦略 | CLAUDE.md+Skills+Hooks+Agentsの統合設定テンプレート | [`recipe-100`](./ch16-power-user/recipe-100-ultimate-setup/) |
 
 ## 動作確認環境
 
