@@ -1,0 +1,25 @@
+{
+  "name": "Claude Code Dev Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    },
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code"
+      ]
+    }
+  },
+  "mounts": [
+    "source=${localEnv:HOME}/.claude.json,target=/home/node/.claude.json,type=bind,readonly"
+  ],
+  "initializeCommand": "bash .devcontainer/init-firewall.sh",
+  "remoteUser": "node"
+}
