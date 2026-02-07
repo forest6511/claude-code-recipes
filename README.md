@@ -131,13 +131,14 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | # | レシピ | 説明 | ディレクトリ |
 |---|--------|------|-------------|
 | 80-81 | Hooks基本設定 | settings.jsonでのHooks定義とマッチャーパターン | `ch13-hooks-basics/` |
-| 83 | コミット前lint/format | PreToolUseフックで自動lint・フォーマット実行 | `ch14-hooks-recipes/recipe-83-lint-format/` |
-| 84 | 危険コマンドブロック | rm -rfやforce push等の危険コマンドを検出・ブロック | `ch14-hooks-recipes/recipe-84-danger-block/` |
-| 85 | 機密情報漏洩防止 | .envやAPIキーのコミット・出力を防止 | `ch14-hooks-recipes/recipe-85-env-protection/` |
-| 86 | ファイル変更時テスト自動実行 | PostToolUseフックでテストを非同期実行 | `ch14-hooks-recipes/recipe-86-auto-test/` |
-| 87 | デスクトップ/サウンド通知 | タスク完了時のデスクトップ・サウンド通知 | `ch14-hooks-recipes/recipe-87-notifications/` |
-| 88 | Gitチェックポイント自動作成 | 一定間隔でgit commitを自動実行 | `ch14-hooks-recipes/recipe-88-git-checkpoint/` |
-| 90 | Stop Hooks自動検証 | Evaluator-Optimizerパターンで品質を自動検証 | `ch14-hooks-recipes/recipe-90-evaluator-optimizer/` |
+| 83 | コミット前lint/format | PreToolUseフックで自動lint・フォーマット実行 | [`recipe-83`](./ch14-hooks-recipes/recipe-83-lint-format/) |
+| 84 | 危険コマンドブロック | rm -rfやforce push等の危険コマンドを検出・ブロック | [`recipe-84`](./ch14-hooks-recipes/recipe-84-danger-block/) |
+| 85 | 機密情報漏洩防止 | .envやAPIキーのコミット・出力を防止 | [`recipe-85`](./ch14-hooks-recipes/recipe-85-env-protection/) |
+| 86 | ファイル変更時テスト自動実行 | PostToolUseフックでテストを非同期実行 | [`recipe-86`](./ch14-hooks-recipes/recipe-86-auto-test/) |
+| 87 | デスクトップ/サウンド通知 | タスク完了時のデスクトップ・サウンド通知 | [`recipe-87`](./ch14-hooks-recipes/recipe-87-notifications/) |
+| 88 | Gitチェックポイント自動作成 | 一定間隔でgit commitを自動実行 | [`recipe-88`](./ch14-hooks-recipes/recipe-88-git-checkpoint/) |
+| 89 | prompt/agent型Hooks | prompt型・agent型による高度な条件制御 | [`recipe-89`](./ch14-hooks-recipes/recipe-89-prompt-agent/) |
+| 90 | Stop Hooks自動検証 | Evaluator-Optimizerパターンで品質を自動検証 | [`recipe-90`](./ch14-hooks-recipes/recipe-90-evaluator-optimizer/) |
 
 ### 第6部: 統合 & パワーユーザーTIPS
 
