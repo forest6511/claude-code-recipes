@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "db": {
+      "command": "npx",
+      "args": ["-y", "@bytebase/dbhub", "--dsn", "${DATABASE_URL}"],
+      "env": {
+        "DATABASE_URL": "${DATABASE_URL}"
+      }
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "env": {
+        "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
+      }
+    },
+    "slack": {
+      "type": "http",
+      "url": "<SlackのMCPサーバーURL>"
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
+    }
+  }
+}
