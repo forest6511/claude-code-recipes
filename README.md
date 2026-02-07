@@ -18,6 +18,7 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | ディレクトリ | 章 | レシピ数 |
 |-------------|---|---------|
 | `ch01-claude-md/` | 第1章: CLAUDE.md & 設定最適化 | 6 |
+| `ch02/` | 第2章: コンテキスト管理とコスト最適化 | 6 |
 | `ch03-github-search/` | 第3章: GitHub & Web検索連携 | 5 |
 | `ch04-playwright/` | 第4章: ブラウザ自動化 & テスト | 5 |
 | `ch05-database/` | 第5章: データベース & 外部サービス連携 | 6 |
@@ -50,6 +51,12 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 04 | モノレポでのCLAUDE.md分割戦略 | 再帰的探索と遅延読み込みを活用したパッケージ別配置 | [`recipe-04`](./ch01-claude-md/recipe-04-monorepo/) |
 | 05 | settings.jsonの実践設定 | 3つのスコープでパーミッション・モデル・MCP設定を管理 | [`recipe-05`](./ch01-claude-md/recipe-05-settings-json/) |
 | 06 | パーミッション設計 | deny/ask/allowの3段階評価で安全性と生産性を両立 | [`recipe-06`](./ch01-claude-md/recipe-06-permissions/) |
+| 07 | コンテキストウィンドウの仕組みと/contextで監視する | ステータスラインでコンテキスト使用率をリアルタイム監視 | [`recipe-07`](./ch02/recipe-07/) |
+| 08 | /compactのカスタム圧縮指示とタイミング戦略 | CLAUDE.mdにcompact指示を記述し重要情報を優先保持 | [`recipe-08`](./ch02/recipe-08/) |
+| 09 | モデル選択戦略 | Opus・Sonnet・Haiku・opusplanのタスク別使い分け | [`recipe-09`](./ch02/recipe-09/) |
+| 10 | トークン消費を削減するプロンプトテクニック | 具体的なプロンプトとCLAUDE.md簡潔化でコスト削減 | [`recipe-10`](./ch02/recipe-10/) |
+| 11 | /cost・/usage・/statsでコストを可視化・管理する | コストをリアルタイム表示するステータスラインスクリプト | [`recipe-11`](./ch02/recipe-11/) |
+| 12 | セッション管理 | /continue・/resume・/rewindの使い分けガイド | [`recipe-12`](./ch02/recipe-12/) |
 
 ### 第2部: MCP実践レシピ
 
