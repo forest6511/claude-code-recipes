@@ -1,0 +1,25 @@
+{
+  "name": "get_order_history",
+  "description": "指定されたユーザーIDに紐づく注文履歴を取得します。結果は日付の降順で返されます。最大100件まで取得可能で、それ以上はcursorパラメータでページネーションしてください。ユーザーIDが存在しない場合は空の配列を返します。",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "user_id": {
+        "type": "string",
+        "description": "ユーザーの一意識別子（例: usr_abc123）"
+      },
+      "limit": {
+        "type": "integer",
+        "description": "取得する注文数の上限（1-100、デフォルト: 20）",
+        "minimum": 1,
+        "maximum": 100,
+        "default": 20
+      },
+      "cursor": {
+        "type": "string",
+        "description": "ページネーション用のカーソル。前回のレスポンスのnext_cursorを指定"
+      }
+    },
+    "required": ["user_id"]
+  }
+}

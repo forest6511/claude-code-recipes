@@ -1,0 +1,17 @@
+{
+  "_comment": "改善が必要なツール定義の例 — 説明が曖昧で、パラメータにポカヨケがない",
+  "name": "get_data",
+  "description": "データを取得する",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "count": {
+        "type": "integer"
+      }
+    },
+    "required": ["id", "count"]
+  }
+}

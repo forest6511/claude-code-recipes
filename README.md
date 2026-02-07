@@ -64,9 +64,12 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 19 | E2Eテスト自動生成 | testing Capabilityを使ったテストコード自動生成 | [`recipe-19`](./ch04-playwright/recipe-19-e2e-test/) |
 | 22 | アクセシビリティテスト | WCAG 2.1準拠チェックとレポート生成 | [`recipe-22`](./ch04-playwright/recipe-22-a11y-test/) |
 | 23 | PostgreSQL MCP | .mcp.jsonとサンプルスキーマの設定例 | `ch05-database/mcp-configs/` |
-| 29 | MCPサーバー設計 --- ACI原則 | ACI設計原則に基づくMCPサーバー設計ガイド | `ch06-mcp-development/recipe-29-basic-design/` |
-| 30 | TypeScript MCPサーバー | 動作するTypeScript MCPサーバーの実装例 | `ch06-mcp-development/recipe-30-typescript/` |
-| 31 | Python MCPサーバー | 動作するPython MCPサーバーの実装例 | `ch06-mcp-development/recipe-31-python/` |
+| 29 | MCPサーバー設計 --- ACI原則 | ACI設計原則に基づくMCPサーバー設計ガイド | [`recipe-29`](./ch06-mcp-development/recipe-29-aci-design/) |
+| 30 | TypeScript MCPサーバー | MCP SDK v1.xでタスク管理サーバーを実装 | [`recipe-30`](./ch06-mcp-development/recipe-30-typescript-mcp/) |
+| 31 | Python MCPサーバー | FastMCPでファイル分析サーバーを実装 | [`recipe-31`](./ch06-mcp-development/recipe-31-python-mcp/) |
+| 32 | MCPテストとデバッグ | MCP Inspectorと/mcpコマンドによるデバッグ手順 | [`recipe-32`](./ch06-mcp-development/recipe-32-mcp-testing/) |
+| 33 | Tool Searchとコンテキスト最適化 | ENABLE_TOOL_SEARCHとinstructionsフィールドの設定 | [`recipe-33`](./ch06-mcp-development/recipe-33-tool-search/) |
+| 34 | claude mcp serve | Claude Code自体をMCPサーバーとして公開する設定 | [`recipe-34`](./ch06-mcp-development/recipe-34-mcp-serve/) |
 
 ### 第3部: Skills実践レシピ
 
