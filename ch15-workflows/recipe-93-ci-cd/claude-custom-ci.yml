@@ -1,0 +1,31 @@
+name: Custom CI Check
+on:
+  push:
+    branches: [main]
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run analysis
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude -p "このリポジトリの最新コミットの変更を分析し、
+            潜在的な問題があればJSON形式で報告してください" \
+            --output-format json \
+            --max-turns 3 \
+            --allowedTools "Read,Glob,Grep,Bash(git diff *),Bash(git log *)" \
+            > analysis.json
+
+      - name: Check results
+        run: |
+          if jq -e '.result | test("問題")' analysis.json > /dev/null 2>&1; then
+            echo "::warning::Claude Code detected potential issues"
+            jq -r '.result' analysis.json
+          fi
