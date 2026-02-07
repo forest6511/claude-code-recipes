@@ -27,7 +27,7 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | [`ch08/`](./ch08/) | 第8章: 実践Skillsテンプレート集 | 8 |
 | [`ch09-skills-tips/`](./ch09-skills-tips/) | 第9章: Skills TIPS & 上級テクニック | 9 |
 | `ch10-subagents-basics/` | 第10章: サブエージェントの基礎と設計 | 5 |
-| `ch11-subagent-dev/` | 第11章: サブエージェント駆動開発 | 7 |
+| [`ch11-subagent-dev/`](./ch11-subagent-dev/) | 第11章: サブエージェント駆動開発 | 7 |
 | `ch12-agent-teams/` | 第12章: Agent Teams & 設計パターン | 10 |
 | `ch13-hooks-basics/` | 第13章: Hooksの仕組みと基礎 | 4 |
 | `ch14-hooks-recipes/` | 第14章: Hooks活用レシピ | 8 |
@@ -108,6 +108,13 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 |---|--------|------|-------------|
 | 59 | カスタムエージェント定義 | .claude/agents/で専門エージェントを定義する | `ch10-subagents-basics/recipe-59-custom-agents/` |
 | 61 | 永続メモリパターン | MEMORY.mdによるセッション横断の知識管理 | `ch10-subagents-basics/recipe-61-memory/` |
+| 62 | 並列Exploreで大規模コードベースを高速調査 | 複数のExploreサブエージェントを並列起動しモジュール単位で同時調査 | [`recipe-62`](./ch11-subagent-dev/recipe-62-parallel-explore/) |
+| 63 | マルチファイルリファクタリングの自動化 | Explore（調査）+ general-purpose（実行）の2フェーズで安全にリファクタリング | [`recipe-63`](./ch11-subagent-dev/recipe-63-multi-file-refactoring/) |
+| 64 | Prompt Chainingと中間ゲート設計 | サブエージェントを順次呼び出すチェーン方式で品質を保つワークフロー構築 | [`recipe-64`](./ch11-subagent-dev/recipe-64-prompt-chaining/) |
+| 65 | テスト実行とレポート集約（バックグラウンド実行） | テストをバックグラウンドで実行し待ち時間に他の作業を並行して進める | [`recipe-65`](./ch11-subagent-dev/recipe-65-background-test/) |
+| 66 | サブエージェント駆動のコードレビュー | レビュー専用カスタムエージェントと永続メモリで学習するレビューを実現 | [`recipe-66`](./ch11-subagent-dev/recipe-66-code-review/) |
+| 67 | レガシーコード分析と移行計画の自動生成 | 並列調査とチェーンを組み合わせ分析から移行計画生成までを自動化 | [`recipe-67`](./ch11-subagent-dev/recipe-67-legacy-analysis/) |
+| 68 | ドキュメント・コメント一括生成 | ドキュメント生成専用サブエージェントでファイル単位の並列ドキュメント生成 | [`recipe-68`](./ch11-subagent-dev/recipe-68-doc-generation/) |
 | 70 | 並列チーム開発 | 複数エージェントの並列実行パターン | `ch12-agent-teams/recipe-70-parallel-team/` |
 | 72 | Git Worktree並列開発 | Worktreeで物理的に並列作業するセットアップ | `ch12-agent-teams/recipe-72-worktree/` |
 | 77 | 専門ロールパターン | PM/Architect/Dev/QAの4ロール定義 | `ch12-agent-teams/recipe-77-role-pattern/` |

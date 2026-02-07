@@ -1,0 +1,4 @@
+src/services/ ディレクトリ内の全TypeScriptファイルに
+ドキュメントコメントを追加してください。
+
+対象: .ts ファイル（.test.ts、.spec.ts は除外）

@@ -1,0 +1,7 @@
+以下の3つの変更を並列で実行してください:
+
+1. src/services/ 内のクラス名をPascalCaseに統一
+2. src/utils/ 内のexportをnamed exportに統一
+3. src/types/ 内の型定義をinterfaceからtypeに統一
+
+各サブエージェントは変更後にテストを実行し、結果を報告してください。
