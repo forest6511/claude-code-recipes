@@ -1,0 +1,35 @@
+name: AI Code Review
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run AI Review
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude -p "/ci-review" \
+            --output-format json \
+            --max-turns 10 \
+            --max-budget-usd 1.00 \
+            --dangerously-skip-permissions \
+            > review-result.json
+
+      - name: Check Results
+        run: |
+          HIGH_COUNT=$(jq '[.result.issues[] | select(.severity == "HIGH")] | length' review-result.json)
+          if [ "$HIGH_COUNT" -gt 0 ]; then
+            echo "::error::HIGH重要度の指摘が${HIGH_COUNT}件あります"
+            jq '.result.issues[] | select(.severity == "HIGH")' review-result.json
+            exit 1
+          fi

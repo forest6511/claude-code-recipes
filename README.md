@@ -24,7 +24,7 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | `ch05-database/` | 第5章: データベース & 外部サービス連携 | 6 |
 | `ch06-mcp-development/` | 第6章: MCPサーバー開発 | 6 |
 | `ch07-skills-basics/` | 第7章: Skills設計と基本 | 5 |
-| `ch08-skills-templates/` | 第8章: 実践Skillsテンプレート集 | 8 |
+| [`ch08/`](./ch08/) | 第8章: 実践Skillsテンプレート集 | 8 |
 | `ch09-skills-tips/` | 第9章: Skills TIPS & 上級テクニック | 9 |
 | `ch10-subagents-basics/` | 第10章: サブエージェントの基礎と設計 | 5 |
 | `ch11-subagent-dev/` | 第11章: サブエージェント駆動開発 | 7 |
@@ -86,7 +86,14 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 36 | 初めてのカスタムSkills | コミットメッセージ生成とコード説明のSkillsを作成する | [`recipe-36`](./ch07-skills-basics/recipe-36-first-skill/) |
 | 37 | $ARGUMENTSで動的パラメータ | 引数展開と`!`command``でSkillsを動的にする | [`recipe-37`](./ch07-skills-basics/recipe-37-arguments/) |
 | 38 | context:forkでサブエージェント実行 | メインコンテキストを消費せず重い処理を分離実行 | [`recipe-38`](./ch07-skills-basics/recipe-38-context-fork/) |
-| 40-47 | Skillsテンプレート集 | コードレビュー、TDD、リファクタリング等の実践Skills | `ch08-skills-templates/` |
+| 40 | コードレビューSkills | PRの差分を自動取得し複数の観点で体系的にレビュー | [`recipe-40`](./ch08/recipe-40/) |
+| 41 | TDD Skills | Red-Green-Refactorサイクルをガイドするテストファースト開発 | [`recipe-41`](./ch08/recipe-41/) |
+| 42 | リファクタリングSkills | コードスメル検出から安全なリファクタリング計画・実行 | [`recipe-42`](./ch08/recipe-42/) |
+| 43 | GitワークフローSkills | コミット・PR作成・リリースノート生成の3つのGit操作 | [`recipe-43`](./ch08/recipe-43/) |
+| 44 | セキュリティスキャンSkills | Semgrep連携と脆弱性分析・修正案提示 | [`recipe-44`](./ch08/recipe-44/) |
+| 45 | API設計・OpenAPI生成Skills | リソース設計からOpenAPI 3.1スペック生成 | [`recipe-45`](./ch08/recipe-45/) |
+| 46 | ドキュメント自動生成Skills | README生成とコードコメント・docstring生成 | [`recipe-46`](./ch08/recipe-46/) |
+| 47 | Headless実行用Skills | CI/CDパイプラインにSkillsを組み込む | [`recipe-47`](./ch08/recipe-47/) |
 | 48-56 | Skills上級テクニック | 活性化率改善、動的コンテキスト注入、namespace等 | `ch09-skills-tips/` |
 
 ### 第4部: サブエージェント実践レシピ

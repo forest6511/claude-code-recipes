@@ -1,0 +1,18 @@
+rules:
+  - id: hardcoded-api-key
+    pattern: |
+      $KEY = "sk-..."
+    message: "APIキーがハードコードされています"
+    severity: ERROR
+    languages: [javascript, typescript, python]
+
+  - id: sql-string-concat
+    patterns:
+      - pattern: |
+          $QUERY = "..." + $INPUT + "..."
+      - metavariable-regex:
+          metavariable: $QUERY
+          regex: ".*(SELECT|INSERT|UPDATE|DELETE).*"
+    message: "SQL文字列連結はSQLインジェクションのリスクがあります"
+    severity: ERROR
+    languages: [javascript, typescript, python]
