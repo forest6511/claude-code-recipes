@@ -98,7 +98,7 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 84 | 危険コマンドブロック | rm -rfやforce push等の危険コマンドを検出・ブロック | `ch14-hooks-recipes/recipe-84-danger-block/` |
 | 85 | 機密情報漏洩防止 | .envやAPIキーのコミット・出力を防止 | `ch14-hooks-recipes/recipe-85-env-protection/` |
 | 86 | ファイル変更時テスト自動実行 | PostToolUseフックでテストを非同期実行 | `ch14-hooks-recipes/recipe-86-auto-test/` |
-| 87 | Slack/ターミナル通知 | タスク完了時の通知を自動化 | `ch14-hooks-recipes/recipe-87-notifications/` |
+| 87 | デスクトップ/サウンド通知 | タスク完了時のデスクトップ・サウンド通知 | `ch14-hooks-recipes/recipe-87-notifications/` |
 | 88 | Gitチェックポイント自動作成 | 一定間隔でgit commitを自動実行 | `ch14-hooks-recipes/recipe-88-git-checkpoint/` |
 | 90 | Stop Hooks自動検証 | Evaluator-Optimizerパターンで品質を自動検証 | `ch14-hooks-recipes/recipe-90-evaluator-optimizer/` |
 
