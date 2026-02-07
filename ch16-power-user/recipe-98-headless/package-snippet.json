@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "lint:claude": "claude -p 'mainブランチとの差分を確認し、タイポや明らかなバグを報告して。ファイル名と行番号を含めること。'",
+    "review:security": "claude -p 'セキュリティの観点でコードをレビューして' --output-format json"
+  }
+}
