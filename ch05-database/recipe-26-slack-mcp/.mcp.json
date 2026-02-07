@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "slack": {
-      "type": "http",
-      "url": "<SlackのMCPサーバーURL>"
-    }
-  }
-}

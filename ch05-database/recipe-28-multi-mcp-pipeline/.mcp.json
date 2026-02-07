@@ -14,9 +14,9 @@
         "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
       }
     },
-    "slack": {
+    "notion": {
       "type": "http",
-      "url": "<SlackのMCPサーバーURL>"
+      "url": "https://mcp.notion.com/mcp"
     },
     "fetch": {
       "command": "uvx",

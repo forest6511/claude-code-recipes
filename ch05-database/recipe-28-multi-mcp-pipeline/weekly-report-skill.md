@@ -1,6 +1,6 @@
 ---
 name: weekly-report
-description: 週次売上レポートを生成してSlackに投稿する
+description: 週次売上レポートを生成してNotionに投稿する
 ---
 
 ## 週次レポート生成
@@ -10,7 +10,7 @@ description: 週次売上レポートを生成してSlackに投稿する
 1. DBHub MCPで今週の売上データを集計（カテゴリ別・日別）
 2. 前週比の増減率を計算
 3. マークダウンテーブルで整形
-4. #weekly-report チャンネルに投稿
+4. Notionの「週次レポート」ページに投稿
 
 ### データ集計のSQL指針
 - 期間: 直近の月曜〜日曜

@@ -18,7 +18,7 @@ export DATABASE_URL="postgresql://user:password@localhost:5432/mydb"
 export CONTEXT7_API_KEY="your-context7-api-key"
 ```
 
-2. `.mcp.json`をプロジェクトルートにコピーし、SlackのURLを設定します。
+2. `.mcp.json`をプロジェクトルートにコピーします。Notion MCPは初回接続時にOAuth認証が必要です。
 
 3. Skillsテンプレートを使う場合は、`weekly-report-skill.md`を`.claude/skills/weekly-report/SKILL.md`にコピーします。
 
@@ -35,7 +35,7 @@ cp weekly-report-skill.md .claude/skills/weekly-report/SKILL.md
 > 1. データベースから今週の売上をカテゴリ別・日別に集計
 > 2. 前週比の増減率を計算
 > 3. 結果をマークダウンのテーブルで整形
-> 4. #weekly-report チャンネルに投稿
+> 4. Notionの「週次レポート」ページに投稿
 
 # Skillsとして実行する場合
 > /weekly-report
