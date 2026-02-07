@@ -55,9 +55,11 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 
 | # | レシピ | 説明 | ディレクトリ |
 |---|--------|------|-------------|
-| 13 | Brave Search MCP | .mcp.jsonでBrave Search APIを設定する | `ch03-github-search/mcp-configs/` |
-| 14 | GitHub MCP | .mcp.jsonでGitHub MCPを設定する | `ch03-github-search/mcp-configs/` |
-| 15 | GitHub Actions連携 | Claude Code対応のCI/CDワークフロー定義 | `ch03-github-search/recipe-15-github-actions/` |
+| 13 | Brave Search MCP | Brave Search APIでWeb検索をClaude Codeに統合 | [`recipe-13`](./ch03-github-search/recipe-13-brave-search/) |
+| 14 | GitHub MCP | GitHub Issue・PRワークフローを会話内で自動化 | [`recipe-14`](./ch03-github-search/recipe-14-github-mcp/) |
+| 15 | GitHub Actions連携 | `@claude`メンションでPRレビューを自動化 | [`recipe-15`](./ch03-github-search/recipe-15-github-actions/) |
+| 16 | Git自動化 | ブランチ作成・コミット・PR作成フローを効率化 | [`recipe-16`](./ch03-github-search/recipe-16-git-automation/) |
+| 17 | 複数リポジトリ横断調査 | マイクロサービス横断のAPI依存関係分析 | [`recipe-17`](./ch03-github-search/recipe-17-cross-repo/) |
 | 18 | Playwright MCPセットアップ | .mcp.jsonでPlaywright MCPを設定する | `ch04-playwright/mcp-configs/` |
 | 19 | E2Eテスト自動生成 | Playwrightベースのサンプルテストコード | `ch04-playwright/recipe-19-e2e-test/` |
 | 23 | PostgreSQL MCP | .mcp.jsonとサンプルスキーマの設定例 | `ch05-database/mcp-configs/` |
