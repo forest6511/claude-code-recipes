@@ -28,7 +28,7 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | [`ch09-skills-tips/`](./ch09-skills-tips/) | 第9章: Skills TIPS & 上級テクニック | 9 |
 | `ch10-subagents-basics/` | 第10章: サブエージェントの基礎と設計 | 5 |
 | [`ch11-subagent-dev/`](./ch11-subagent-dev/) | 第11章: サブエージェント駆動開発 | 7 |
-| `ch12-agent-teams/` | 第12章: Agent Teams & 設計パターン | 10 |
+| [`ch12-agent-teams/`](./ch12-agent-teams/) | 第12章: Agent Teams & 設計パターン | 10 |
 | `ch13-hooks-basics/` | 第13章: Hooksの仕組みと基礎 | 4 |
 | `ch14-hooks-recipes/` | 第14章: Hooks活用レシピ | 8 |
 | `ch15-workflows/` | 第15章: プロジェクトワークフロー | 5 |
@@ -115,9 +115,16 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 66 | サブエージェント駆動のコードレビュー | レビュー専用カスタムエージェントと永続メモリで学習するレビューを実現 | [`recipe-66`](./ch11-subagent-dev/recipe-66-code-review/) |
 | 67 | レガシーコード分析と移行計画の自動生成 | 並列調査とチェーンを組み合わせ分析から移行計画生成までを自動化 | [`recipe-67`](./ch11-subagent-dev/recipe-67-legacy-analysis/) |
 | 68 | ドキュメント・コメント一括生成 | ドキュメント生成専用サブエージェントでファイル単位の並列ドキュメント生成 | [`recipe-68`](./ch11-subagent-dev/recipe-68-doc-generation/) |
-| 70 | 並列チーム開発 | 複数エージェントの並列実行パターン | `ch12-agent-teams/recipe-70-parallel-team/` |
-| 72 | Git Worktree並列開発 | Worktreeで物理的に並列作業するセットアップ | `ch12-agent-teams/recipe-72-worktree/` |
-| 77 | 専門ロールパターン | PM/Architect/Dev/QAの4ロール定義 | `ch12-agent-teams/recipe-77-role-pattern/` |
+| 69 | Agent Teamsの基本 | リーダー・チームメイトの仕組みと有効化設定 | [`recipe-69`](./ch12-agent-teams/recipe-69-agent-teams-basics/) |
+| 70 | 並列チーム開発 | フロントエンド+バックエンド+テストの3層並列開発 | [`recipe-70`](./ch12-agent-teams/recipe-70-parallel-team/) |
+| 71 | 共有タスクリストと依存関係管理 | タスクの状態管理と依存関係の自動化 | [`recipe-71`](./ch12-agent-teams/recipe-71-task-list/) |
+| 72 | Git Worktree並列開発 | Worktreeで物理的に並列作業するセットアップ | [`recipe-72`](./ch12-agent-teams/recipe-72-worktree/) |
+| 73 | Routingパターン | 入力の複雑度でモデル・エージェントを振り分ける | [`recipe-73`](./ch12-agent-teams/recipe-73-routing/) |
+| 74 | バックグラウンド実行と結果監視 | Ctrl+Bでタスクをバックグラウンドに切り替え並行管理 | [`recipe-74`](./ch12-agent-teams/recipe-74-background/) |
+| 75 | --agentsフラグで動的エージェント定義 | JSONでセッション限りのエージェントを動的に定義 | [`recipe-75`](./ch12-agent-teams/recipe-75-agents-flag/) |
+| 76 | Map-Reduceパターン | 並列処理・集約・Voting（合議）の応用 | [`recipe-76`](./ch12-agent-teams/recipe-76-map-reduce/) |
+| 77 | 専門ロールパターン | PM/Architect/Developer/QAの4ロール定義 | [`recipe-77`](./ch12-agent-teams/recipe-77-role-pattern/) |
+| 78 | コスト最適化パターン | 18.75倍のモデル価格差を活かしたコスト最適化 | [`recipe-78`](./ch12-agent-teams/recipe-78-cost-optimization/) |
 
 ### 第5部: Hooks実践レシピ
 
