@@ -31,7 +31,7 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | [`ch12-agent-teams/`](./ch12-agent-teams/) | 第12章: Agent Teams & 設計パターン | 10 |
 | `ch13-hooks-basics/` | 第13章: Hooksの仕組みと基礎 | 4 |
 | `ch14-hooks-recipes/` | 第14章: Hooks活用レシピ | 8 |
-| `ch15-workflows/` | 第15章: プロジェクトワークフロー | 5 |
+| [`ch15-workflows/`](./ch15-workflows/) | 第15章: プロジェクトワークフロー | 5 |
 | `ch16-power-user/` | 第16章: パワーユーザーTIPS集 | 5 |
 | `shared/` | 共通テンプレート・設定 | - |
 
@@ -144,9 +144,11 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 
 | # | レシピ | 説明 | ディレクトリ |
 |---|--------|------|-------------|
-| 91 | 品質ゲートパイプライン | Skills+Hooks+Agentsの統合品質管理パイプライン | `ch15-workflows/recipe-91-quality-gate/` |
-| 92 | Spec駆動開発 | 仕様書からコード生成・テスト・レビューまで自動化 | `ch15-workflows/recipe-92-spec-driven/` |
-| 93 | CI/CDパイプライン | GitHub Actionsと連携したClaude Code自動化 | `ch15-workflows/recipe-93-ci-cd/` |
+| 91 | 品質ゲートパイプライン | MCP+Skills+Hooksで「生成→評価→改善」を自動反復する品質管理パイプライン | [`recipe-91`](./ch15-workflows/recipe-91-quality-gate/) |
+| 92 | Spec駆動開発 | 仕様→設計→実装→テストの4フェーズをSkillsとPlan Modeで管理 | [`recipe-92`](./ch15-workflows/recipe-92-spec-driven/) |
+| 93 | CI/CDパイプライン | claude-code-actionとヘッドレスモードでCI/CDを自動化 | [`recipe-93`](./ch15-workflows/recipe-93-ci-cd/) |
+| 94 | Issue駆動開発 | GitHub Issue取得からブランチ作成・実装・PR作成まで一気通貫 | [`recipe-94`](./ch15-workflows/recipe-94-issue-driven/) |
+| 95 | マルチセッション・チーム開発 | Git Worktreeとセッション管理で並行開発とチーム共有を実現 | [`recipe-95`](./ch15-workflows/recipe-95-multi-session/) |
 | 97 | Docker隔離実行 | DockerとDevContainerでClaude Codeを安全に隔離 | `ch16-power-user/recipe-97-docker/` |
 | 98 | ヘッドレスモード | バッチ処理やCI環境でのヘッドレス実行 | `ch16-power-user/recipe-98-headless/` |
 | 100 | 究極のカスタマイズ戦略 | CLAUDE.md+Skills+Hooks+Agentsの統合設定テンプレート | `ch16-power-user/recipe-100-ultimate-setup/` |
