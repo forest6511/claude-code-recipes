@@ -1,0 +1,17 @@
+{
+  "description": "チーム標準のコード品質チェック",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/lint-check.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
