@@ -60,8 +60,9 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 15 | GitHub Actions連携 | `@claude`メンションでPRレビューを自動化 | [`recipe-15`](./ch03-github-search/recipe-15-github-actions/) |
 | 16 | Git自動化 | ブランチ作成・コミット・PR作成フローを効率化 | [`recipe-16`](./ch03-github-search/recipe-16-git-automation/) |
 | 17 | 複数リポジトリ横断調査 | マイクロサービス横断のAPI依存関係分析 | [`recipe-17`](./ch03-github-search/recipe-17-cross-repo/) |
-| 18 | Playwright MCPセットアップ | .mcp.jsonでPlaywright MCPを設定する | `ch04-playwright/mcp-configs/` |
-| 19 | E2Eテスト自動生成 | Playwrightベースのサンプルテストコード | `ch04-playwright/recipe-19-e2e-test/` |
+| 18 | Playwright MCPセットアップ | .mcp.jsonの設定方法と基本的な操作フロー | [`recipe-18`](./ch04-playwright/recipe-18-setup/) |
+| 19 | E2Eテスト自動生成 | testing Capabilityを使ったテストコード自動生成 | [`recipe-19`](./ch04-playwright/recipe-19-e2e-test/) |
+| 22 | アクセシビリティテスト | WCAG 2.1準拠チェックとレポート生成 | [`recipe-22`](./ch04-playwright/recipe-22-a11y-test/) |
 | 23 | PostgreSQL MCP | .mcp.jsonとサンプルスキーマの設定例 | `ch05-database/mcp-configs/` |
 | 29 | MCPサーバー設計 --- ACI原則 | ACI設計原則に基づくMCPサーバー設計ガイド | `ch06-mcp-development/recipe-29-basic-design/` |
 | 30 | TypeScript MCPサーバー | 動作するTypeScript MCPサーバーの実装例 | `ch06-mcp-development/recipe-30-typescript/` |
