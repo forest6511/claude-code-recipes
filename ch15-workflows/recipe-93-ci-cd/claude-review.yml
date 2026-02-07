@@ -1,0 +1,24 @@
+name: Claude Code Review
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            このPRの変更をレビューしてください。
+            以下の観点でチェックしてください:
+            - コードの品質と可読性
+            - 潜在的なバグやエッジケース
+            - セキュリティ上の懸念
+            - テストカバレッジ
+          claude_args: "--max-turns 5"
