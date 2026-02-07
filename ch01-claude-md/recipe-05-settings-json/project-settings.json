@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Bash(npm run *)",
+      "Bash(npx prisma *)",
+      "Bash(git diff *)",
+      "Bash(git status)",
+      "Bash(git log *)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(./secrets/**)",
+      "Bash(git push --force *)",
+      "Bash(npx prisma migrate deploy *)"
+    ],
+    "ask": [
+      "Bash(git push *)"
+    ]
+  },
+  "enableAllProjectMcpServers": true
+}

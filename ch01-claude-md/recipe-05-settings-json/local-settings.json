@@ -1,0 +1,7 @@
+{
+  "model": "claude-sonnet-4-5-20250929",
+  "env": {
+    "DATABASE_URL": "postgresql://localhost:5432/myapp_dev",
+    "REDIS_URL": "redis://localhost:6379"
+  }
+}

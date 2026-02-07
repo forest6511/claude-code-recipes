@@ -42,64 +42,73 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 
 ### 第1部: 基盤編
 
-| # | レシピ | ディレクトリ |
-|---|--------|-------------|
-| 01 | 効果的なCLAUDE.mdの書き方 | `ch01-claude-md/recipe-01-effective-claude-md/` |
-| 02 | CLAUDE.md階層設計 | `ch01-claude-md/recipe-02-hierarchy/` |
-| 03 | .claude/rules/で条件付きルール | `ch01-claude-md/recipe-03-conditional-rules/` |
-| 04 | モノレポでのCLAUDE.md分割戦略 | `ch01-claude-md/recipe-04-monorepo/` |
-| 05 | settings.jsonの実践設定 | `ch01-claude-md/recipe-05-settings-json/` |
-| 06 | パーミッション設計 | `ch01-claude-md/recipe-06-permissions/` |
+| # | レシピ | 説明 | ディレクトリ |
+|---|--------|------|-------------|
+| 01 | 効果的なCLAUDE.mdの書き方 | WHY/WHAT/HOWの3層構造で300行以内にまとめる | [`recipe-01`](./ch01-claude-md/recipe-01-effective-claude-md/) |
+| 02 | CLAUDE.md階層設計 | グローバル・プロジェクト・ローカルの3階層で設定を分離する | [`recipe-02`](./ch01-claude-md/recipe-02-hierarchy/) |
+| 03 | .claude/rules/で条件付きルール | pathsフロントマターで特定ファイル操作時にだけルールを適用 | [`recipe-03`](./ch01-claude-md/recipe-03-conditional-rules/) |
+| 04 | モノレポでのCLAUDE.md分割戦略 | 再帰的探索と遅延読み込みを活用したパッケージ別配置 | [`recipe-04`](./ch01-claude-md/recipe-04-monorepo/) |
+| 05 | settings.jsonの実践設定 | 3つのスコープでパーミッション・モデル・MCP設定を管理 | [`recipe-05`](./ch01-claude-md/recipe-05-settings-json/) |
+| 06 | パーミッション設計 | deny/ask/allowの3段階評価で安全性と生産性を両立 | [`recipe-06`](./ch01-claude-md/recipe-06-permissions/) |
 
 ### 第2部: MCP実践レシピ
 
-| # | レシピ | ディレクトリ |
-|---|--------|-------------|
-| 13 | Brave Search MCP | `ch03-github-search/mcp-configs/` |
-| 14 | GitHub MCP | `ch03-github-search/mcp-configs/` |
-| 15 | GitHub Actions連携 | `ch03-github-search/recipe-15-github-actions/` |
-| 18 | Playwright MCPセットアップ | `ch04-playwright/mcp-configs/` |
-| 19 | E2Eテスト自動生成 | `ch04-playwright/recipe-19-e2e-test/` |
-| 23 | PostgreSQL MCP | `ch05-database/mcp-configs/` |
-| 29 | MCPサーバー設計 --- ACI原則 | `ch06-mcp-development/recipe-29-basic-design/` |
-| 30 | TypeScript MCPサーバー | `ch06-mcp-development/recipe-30-typescript/` |
-| 31 | Python MCPサーバー | `ch06-mcp-development/recipe-31-python/` |
+| # | レシピ | 説明 | ディレクトリ |
+|---|--------|------|-------------|
+| 13 | Brave Search MCP | .mcp.jsonでBrave Search APIを設定する | `ch03-github-search/mcp-configs/` |
+| 14 | GitHub MCP | .mcp.jsonでGitHub MCPを設定する | `ch03-github-search/mcp-configs/` |
+| 15 | GitHub Actions連携 | Claude Code対応のCI/CDワークフロー定義 | `ch03-github-search/recipe-15-github-actions/` |
+| 18 | Playwright MCPセットアップ | .mcp.jsonでPlaywright MCPを設定する | `ch04-playwright/mcp-configs/` |
+| 19 | E2Eテスト自動生成 | Playwrightベースのサンプルテストコード | `ch04-playwright/recipe-19-e2e-test/` |
+| 23 | PostgreSQL MCP | .mcp.jsonとサンプルスキーマの設定例 | `ch05-database/mcp-configs/` |
+| 29 | MCPサーバー設計 --- ACI原則 | ACI設計原則に基づくMCPサーバー設計ガイド | `ch06-mcp-development/recipe-29-basic-design/` |
+| 30 | TypeScript MCPサーバー | 動作するTypeScript MCPサーバーの実装例 | `ch06-mcp-development/recipe-30-typescript/` |
+| 31 | Python MCPサーバー | 動作するPython MCPサーバーの実装例 | `ch06-mcp-development/recipe-31-python/` |
 
 ### 第3部: Skills実践レシピ
 
-| # | レシピ | ディレクトリ |
-|---|--------|-------------|
-| 35-38 | Skills基本パターン | `ch07-skills-basics/` |
-| 40-47 | Skillsテンプレート集 | `ch08-skills-templates/` |
-| 48-56 | Skills上級テクニック | `ch09-skills-tips/` |
+| # | レシピ | 説明 | ディレクトリ |
+|---|--------|------|-------------|
+| 35 | SKILL.mdの基本構造 | フロントマターとマークダウン本文の役割を理解する | [`recipe-35`](./ch07-skills-basics/recipe-35-basic-structure/) |
+| 36 | 初めてのカスタムSkills | コミットメッセージ生成とコード説明のSkillsを作成する | [`recipe-36`](./ch07-skills-basics/recipe-36-first-skill/) |
+| 37 | $ARGUMENTSで動的パラメータ | 引数展開と`!`command``でSkillsを動的にする | [`recipe-37`](./ch07-skills-basics/recipe-37-arguments/) |
+| 38 | context:forkでサブエージェント実行 | メインコンテキストを消費せず重い処理を分離実行 | [`recipe-38`](./ch07-skills-basics/recipe-38-context-fork/) |
+| 40-47 | Skillsテンプレート集 | コードレビュー、TDD、リファクタリング等の実践Skills | `ch08-skills-templates/` |
+| 48-56 | Skills上級テクニック | 活性化率改善、動的コンテキスト注入、namespace等 | `ch09-skills-tips/` |
 
 ### 第4部: サブエージェント実践レシピ
 
-| # | レシピ | ディレクトリ |
-|---|--------|-------------|
-| 59 | カスタムエージェント定義 | `ch10-subagents-basics/recipe-59-custom-agents/` |
-| 61 | 永続メモリパターン | `ch10-subagents-basics/recipe-61-memory/` |
-| 70 | 並列チーム開発 | `ch12-agent-teams/recipe-70-parallel-team/` |
-| 72 | Git Worktree並列開発 | `ch12-agent-teams/recipe-72-worktree/` |
-| 77 | 専門ロールパターン | `ch12-agent-teams/recipe-77-role-pattern/` |
+| # | レシピ | 説明 | ディレクトリ |
+|---|--------|------|-------------|
+| 59 | カスタムエージェント定義 | .claude/agents/で専門エージェントを定義する | `ch10-subagents-basics/recipe-59-custom-agents/` |
+| 61 | 永続メモリパターン | MEMORY.mdによるセッション横断の知識管理 | `ch10-subagents-basics/recipe-61-memory/` |
+| 70 | 並列チーム開発 | 複数エージェントの並列実行パターン | `ch12-agent-teams/recipe-70-parallel-team/` |
+| 72 | Git Worktree並列開発 | Worktreeで物理的に並列作業するセットアップ | `ch12-agent-teams/recipe-72-worktree/` |
+| 77 | 専門ロールパターン | PM/Architect/Dev/QAの4ロール定義 | `ch12-agent-teams/recipe-77-role-pattern/` |
 
 ### 第5部: Hooks実践レシピ
 
-| # | レシピ | ディレクトリ |
-|---|--------|-------------|
-| 80-81 | Hooks基本設定 | `ch13-hooks-basics/` |
-| 83-90 | Hooks活用レシピ | `ch14-hooks-recipes/` |
+| # | レシピ | 説明 | ディレクトリ |
+|---|--------|------|-------------|
+| 80-81 | Hooks基本設定 | settings.jsonでのHooks定義とマッチャーパターン | `ch13-hooks-basics/` |
+| 83 | コミット前lint/format | PreToolUseフックで自動lint・フォーマット実行 | `ch14-hooks-recipes/recipe-83-lint-format/` |
+| 84 | 危険コマンドブロック | rm -rfやforce push等の危険コマンドを検出・ブロック | `ch14-hooks-recipes/recipe-84-danger-block/` |
+| 85 | 機密情報漏洩防止 | .envやAPIキーのコミット・出力を防止 | `ch14-hooks-recipes/recipe-85-env-protection/` |
+| 86 | ファイル変更時テスト自動実行 | PostToolUseフックでテストを非同期実行 | `ch14-hooks-recipes/recipe-86-auto-test/` |
+| 87 | Slack/ターミナル通知 | タスク完了時の通知を自動化 | `ch14-hooks-recipes/recipe-87-notifications/` |
+| 88 | Gitチェックポイント自動作成 | 一定間隔でgit commitを自動実行 | `ch14-hooks-recipes/recipe-88-git-checkpoint/` |
+| 90 | Stop Hooks自動検証 | Evaluator-Optimizerパターンで品質を自動検証 | `ch14-hooks-recipes/recipe-90-evaluator-optimizer/` |
 
 ### 第6部: 統合 & パワーユーザーTIPS
 
-| # | レシピ | ディレクトリ |
-|---|--------|-------------|
-| 91 | 品質ゲートパイプライン | `ch15-workflows/recipe-91-quality-gate/` |
-| 92 | Spec駆動開発 | `ch15-workflows/recipe-92-spec-driven/` |
-| 93 | CI/CDパイプライン | `ch15-workflows/recipe-93-ci-cd/` |
-| 97 | Docker隔離実行 | `ch16-power-user/recipe-97-docker/` |
-| 98 | ヘッドレスモード | `ch16-power-user/recipe-98-headless/` |
-| 100 | 究極のカスタマイズ戦略 | `ch16-power-user/recipe-100-ultimate-setup/` |
+| # | レシピ | 説明 | ディレクトリ |
+|---|--------|------|-------------|
+| 91 | 品質ゲートパイプライン | Skills+Hooks+Agentsの統合品質管理パイプライン | `ch15-workflows/recipe-91-quality-gate/` |
+| 92 | Spec駆動開発 | 仕様書からコード生成・テスト・レビューまで自動化 | `ch15-workflows/recipe-92-spec-driven/` |
+| 93 | CI/CDパイプライン | GitHub Actionsと連携したClaude Code自動化 | `ch15-workflows/recipe-93-ci-cd/` |
+| 97 | Docker隔離実行 | DockerとDevContainerでClaude Codeを安全に隔離 | `ch16-power-user/recipe-97-docker/` |
+| 98 | ヘッドレスモード | バッチ処理やCI環境でのヘッドレス実行 | `ch16-power-user/recipe-98-headless/` |
+| 100 | 究極のカスタマイズ戦略 | CLAUDE.md+Skills+Hooks+Agentsの統合設定テンプレート | `ch16-power-user/recipe-100-ultimate-setup/` |
 
 ## 動作確認環境
 
