@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "以下のファイル書き込みがプロジェクトのアーキテクチャ規約に従っているか評価してください。規約: 1) src/以下はレイヤードアーキテクチャ（controller/service/repository）を守る、2) 循環依存を作らない、3) ビジネスロジックをcontrollerに書かない。入力: $ARGUMENTS。{\"ok\": true}または{\"ok\": false, \"reason\": \"理由\"}で応答してください。",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

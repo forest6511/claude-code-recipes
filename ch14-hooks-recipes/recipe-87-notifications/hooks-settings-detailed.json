@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "permission_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Basso.aiff & osascript -e 'display notification \"許可が必要です\" with title \"Claude Code\"'"
+          }
+        ]
+      },
+      {
+        "matcher": "idle_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Glass.aiff & osascript -e 'display notification \"入力待ちです\" with title \"Claude Code\"'"
+          }
+        ]
+      }
+    ]
+  }
+}

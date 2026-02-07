@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/verify-completion.sh",
+            "timeout": 120,
+            "statusMessage": "タスク完了を検証中..."
+          }
+        ]
+      }
+    ]
+  }
+}
