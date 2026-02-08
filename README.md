@@ -13,35 +13,48 @@
 cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./CLAUDE.md
 ```
 
+## こんな時はこのレシピ
+
+| やりたいこと | レシピ | 章 |
+|-------------|--------|---|
+| プロジェクトに`CLAUDE.md`を導入したい | [#01](./ch01-claude-md/recipe-01-effective-claude-md/) | 第1章 |
+| MCPサーバーを自作したい（TypeScript） | [#30](./ch06-mcp-development/recipe-30-typescript-mcp/) | 第6章 |
+| Skillsを初めて作りたい | [#36](./ch07-skills-basics/recipe-36-first-skill/) | 第7章 |
+| Skillsが動かない原因を知りたい | [#53](./ch09-skills-tips/recipe-53/) | 第9章 |
+| カスタムエージェントを定義したい | [#59](./ch10-subagents-basics/recipe-59-custom-agents/) | 第10章 |
+| Agent Teamsで並列開発したい | [#69](./ch12-agent-teams/recipe-69-agent-teams-basics/) | 第12章 |
+| コミット前に自動lintを実行したい | [#83](./ch14-hooks-recipes/recipe-83-lint-format/) | 第14章 |
+| 危険なコマンドをブロックしたい | [#84](./ch14-hooks-recipes/recipe-84-danger-block/) | 第14章 |
+| CI/CDにClaude Codeを組み込みたい | [#93](./ch15-workflows/recipe-93-ci-cd/) | 第15章 |
+| Docker/DevContainerで安全に実行したい | [#97](./ch16-power-user/recipe-97-docker/) | 第16章 |
+
 ## ディレクトリ構成
 
 | ディレクトリ | 章 | レシピ数 |
 |-------------|---|---------|
-| `ch01-claude-md/` | 第1章: `CLAUDE.md` & 設定最適化 | 6 |
-| `ch02/` | 第2章: コンテキスト管理とコスト最適化 | 6 |
-| `ch03-github-search/` | 第3章: GitHub & Web検索連携 | 5 |
-| `ch04-playwright/` | 第4章: ブラウザ自動化 & テスト | 5 |
-| `ch05-database/` | 第5章: データベース & 外部サービス連携 | 6 |
-| `ch06-mcp-development/` | 第6章: MCPサーバー開発 | 6 |
-| `ch07-skills-basics/` | 第7章: Skills設計と基本 | 5 |
-| [`ch08/`](./ch08/) | 第8章: 実践Skillsテンプレート集 | 8 |
+| [`ch01-claude-md/`](./ch01-claude-md/) | 第1章: `CLAUDE.md` & 設定最適化 | 6 |
+| [`ch02-context-cost/`](./ch02-context-cost/) | 第2章: コンテキスト管理とコスト最適化 | 6 |
+| [`ch03-github-search/`](./ch03-github-search/) | 第3章: GitHub & Web検索連携 | 5 |
+| [`ch04-playwright/`](./ch04-playwright/) | 第4章: ブラウザ自動化 & テスト | 5 |
+| [`ch05-database/`](./ch05-database/) | 第5章: データベース & 外部サービス連携 | 6 |
+| [`ch06-mcp-development/`](./ch06-mcp-development/) | 第6章: MCPサーバー開発 | 6 |
+| [`ch07-skills-basics/`](./ch07-skills-basics/) | 第7章: Skills設計と基本 | 5 |
+| [`ch08-skills-templates/`](./ch08-skills-templates/) | 第8章: 実践Skillsテンプレート集 | 8 |
 | [`ch09-skills-tips/`](./ch09-skills-tips/) | 第9章: Skills TIPS & 上級テクニック | 9 |
-| `ch10-subagents-basics/` | 第10章: サブエージェントの基礎と設計 | 5 |
+| [`ch10-subagents-basics/`](./ch10-subagents-basics/) | 第10章: サブエージェントの基礎と設計 | 5 |
 | [`ch11-subagent-dev/`](./ch11-subagent-dev/) | 第11章: サブエージェント駆動開発 | 7 |
 | [`ch12-agent-teams/`](./ch12-agent-teams/) | 第12章: Agent Teams & 設計パターン | 10 |
-| `ch13-hooks-basics/` | 第13章: Hooksの仕組みと基礎 | 4 |
-| `ch14-hooks-recipes/` | 第14章: Hooks活用レシピ | 8 |
+| [`ch13-hooks-basics/`](./ch13-hooks-basics/) | 第13章: Hooksの仕組みと基礎 | 4 |
+| [`ch14-hooks-recipes/`](./ch14-hooks-recipes/) | 第14章: Hooks活用レシピ | 8 |
 | [`ch15-workflows/`](./ch15-workflows/) | 第15章: プロジェクトワークフロー | 5 |
 | [`ch16-power-user/`](./ch16-power-user/) | 第16章: パワーユーザーTIPS集 | 5 |
-| `shared/` | 共通テンプレート・設定 | - |
 
 ## レシピ対応表
 
 サンプルコードが含まれるレシピの一覧です（概念説明中心のレシピは省略）。
 
-> 各レシピのサンプルコードは、書籍の執筆完了後に順次追加されます。
-
-### 第1部: 基盤編
+<details>
+<summary><strong>第1部: 基盤編</strong>（12レシピ）</summary>
 
 | # | レシピ | 説明 | ディレクトリ |
 |---|--------|------|-------------|
@@ -51,14 +64,17 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 04 | モノレポでの`CLAUDE.md`分割戦略 | 再帰的探索と遅延読み込みを活用したパッケージ別配置 | [`recipe-04`](./ch01-claude-md/recipe-04-monorepo/) |
 | 05 | `settings.json`の実践設定 | 3つのスコープでパーミッション・モデル・MCP設定を管理 | [`recipe-05`](./ch01-claude-md/recipe-05-settings-json/) |
 | 06 | パーミッション設計 | deny/ask/allowの3段階評価で安全性と生産性を両立 | [`recipe-06`](./ch01-claude-md/recipe-06-permissions/) |
-| 07 | コンテキストウィンドウの仕組みと/contextで監視する | ステータスラインでコンテキスト使用率をリアルタイム監視 | [`recipe-07`](./ch02/recipe-07/) |
-| 08 | /compactのカスタム圧縮指示とタイミング戦略 | `CLAUDE.md`にcompact指示を記述し重要情報を優先保持 | [`recipe-08`](./ch02/recipe-08/) |
-| 09 | モデル選択戦略 | Opus・Sonnet・Haiku・opusplanのタスク別使い分け | [`recipe-09`](./ch02/recipe-09/) |
-| 10 | トークン消費を削減するプロンプトテクニック | 具体的なプロンプトと`CLAUDE.md`簡潔化でコスト削減 | [`recipe-10`](./ch02/recipe-10/) |
-| 11 | /cost・/usage・/statsでコストを可視化・管理する | コストをリアルタイム表示するステータスラインスクリプト | [`recipe-11`](./ch02/recipe-11/) |
-| 12 | セッション管理 | /continue・/resume・/rewindの使い分けガイド | [`recipe-12`](./ch02/recipe-12/) |
+| 07 | コンテキストウィンドウの仕組みと/contextで監視する | ステータスラインでコンテキスト使用率をリアルタイム監視 | [`recipe-07`](./ch02-context-cost/recipe-07/) |
+| 08 | /compactのカスタム圧縮指示とタイミング戦略 | `CLAUDE.md`にcompact指示を記述し重要情報を優先保持 | [`recipe-08`](./ch02-context-cost/recipe-08/) |
+| 09 | モデル選択戦略 | Opus・Sonnet・Haiku・opusplanのタスク別使い分け | [`recipe-09`](./ch02-context-cost/recipe-09/) |
+| 10 | トークン消費を削減するプロンプトテクニック | 具体的なプロンプトと`CLAUDE.md`簡潔化でコスト削減 | [`recipe-10`](./ch02-context-cost/recipe-10/) |
+| 11 | /cost・/usage・/statsでコストを可視化・管理する | コストをリアルタイム表示するステータスラインスクリプト | [`recipe-11`](./ch02-context-cost/recipe-11/) |
+| 12 | セッション管理 | --continue・/resume・リワインドの使い分けガイド | [`recipe-12`](./ch02-context-cost/recipe-12/) |
 
-### 第2部: MCP実践レシピ
+</details>
+
+<details>
+<summary><strong>第2部: MCP実践レシピ</strong>（22レシピ）</summary>
 
 | # | レシピ | 説明 | ディレクトリ |
 |---|--------|------|-------------|
@@ -70,15 +86,18 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 18 | Playwright MCPセットアップ | `.mcp.json`の設定方法と基本的な操作フロー | [`recipe-18`](./ch04-playwright/recipe-18-setup/) |
 | 19 | E2Eテスト自動生成 | testing Capabilityを使ったテストコード自動生成 | [`recipe-19`](./ch04-playwright/recipe-19-e2e-test/) |
 | 22 | アクセシビリティテスト | WCAG 2.1準拠チェックとレポート生成 | [`recipe-22`](./ch04-playwright/recipe-22-a11y-test/) |
-| 23 | PostgreSQL MCP | `.mcp.json`とサンプルスキーマの設定例 | `ch05-database/mcp-configs/` |
+| 23 | PostgreSQL MCP | `.mcp.json`とサンプルスキーマの設定例 | [`mcp-configs`](./ch05-database/mcp-configs/) |
 | 29 | MCPサーバー設計 --- ACI原則 | ACI設計原則に基づくMCPサーバー設計ガイド | [`recipe-29`](./ch06-mcp-development/recipe-29-aci-design/) |
 | 30 | TypeScript MCPサーバー | MCP SDK v1.xでタスク管理サーバーを実装 | [`recipe-30`](./ch06-mcp-development/recipe-30-typescript-mcp/) |
 | 31 | Python MCPサーバー | FastMCPでファイル分析サーバーを実装 | [`recipe-31`](./ch06-mcp-development/recipe-31-python-mcp/) |
-| 32 | MCPテストとデバッグ | MCP Inspectorと/mcpコマンドによるデバッグ手順 | [`recipe-32`](./ch06-mcp-development/recipe-32-mcp-testing/) |
+| 32 | MCPテストとデバッグ | MCP Inspectorと`/mcp`コマンドによるデバッグ手順 | [`recipe-32`](./ch06-mcp-development/recipe-32-mcp-testing/) |
 | 33 | Tool Searchとコンテキスト最適化 | ENABLE_TOOL_SEARCHとinstructionsフィールドの設定 | [`recipe-33`](./ch06-mcp-development/recipe-33-tool-search/) |
 | 34 | claude mcp serve | Claude Code自体をMCPサーバーとして公開する設定 | [`recipe-34`](./ch06-mcp-development/recipe-34-mcp-serve/) |
 
-### 第3部: Skills実践レシピ
+</details>
+
+<details>
+<summary><strong>第3部: Skills実践レシピ</strong>（22レシピ）</summary>
 
 | # | レシピ | 説明 | ディレクトリ |
 |---|--------|------|-------------|
@@ -86,14 +105,14 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 36 | 初めてのカスタムSkills | コミットメッセージ生成とコード説明のSkillsを作成する | [`recipe-36`](./ch07-skills-basics/recipe-36-first-skill/) |
 | 37 | $ARGUMENTSで動的パラメータ | 引数展開と`` !`command` ``でSkillsを動的にする | [`recipe-37`](./ch07-skills-basics/recipe-37-arguments/) |
 | 38 | context:forkでサブエージェント実行 | メインコンテキストを消費せず重い処理を分離実行 | [`recipe-38`](./ch07-skills-basics/recipe-38-context-fork/) |
-| 40 | コードレビューSkills | PRの差分を自動取得し複数の観点で体系的にレビュー | [`recipe-40`](./ch08/recipe-40/) |
-| 41 | TDD Skills | Red-Green-Refactorサイクルをガイドするテストファースト開発 | [`recipe-41`](./ch08/recipe-41/) |
-| 42 | リファクタリングSkills | コードスメル検出から安全なリファクタリング計画・実行 | [`recipe-42`](./ch08/recipe-42/) |
-| 43 | GitワークフローSkills | コミット・PR作成・リリースノート生成の3つのGit操作 | [`recipe-43`](./ch08/recipe-43/) |
-| 44 | セキュリティスキャンSkills | Semgrep連携と脆弱性分析・修正案提示 | [`recipe-44`](./ch08/recipe-44/) |
-| 45 | API設計・OpenAPI生成Skills | リソース設計からOpenAPI 3.1スペック生成 | [`recipe-45`](./ch08/recipe-45/) |
-| 46 | ドキュメント自動生成Skills | README生成とコードコメント・docstring生成 | [`recipe-46`](./ch08/recipe-46/) |
-| 47 | Headless実行用Skills | CI/CDパイプラインにSkillsを組み込む | [`recipe-47`](./ch08/recipe-47/) |
+| 40 | コードレビューSkills | PRの差分を自動取得し複数の観点で体系的にレビュー | [`recipe-40`](./ch08-skills-templates/recipe-40/) |
+| 41 | TDD Skills | Red-Green-Refactorサイクルをガイドするテストファースト開発 | [`recipe-41`](./ch08-skills-templates/recipe-41/) |
+| 42 | リファクタリングSkills | コードスメル検出から安全なリファクタリング計画・実行 | [`recipe-42`](./ch08-skills-templates/recipe-42/) |
+| 43 | GitワークフローSkills | コミット・PR作成・リリースノート生成の3つのGit操作 | [`recipe-43`](./ch08-skills-templates/recipe-43/) |
+| 44 | セキュリティスキャンSkills | Semgrep連携と脆弱性分析・修正案提示 | [`recipe-44`](./ch08-skills-templates/recipe-44/) |
+| 45 | API設計・OpenAPI生成Skills | リソース設計からOpenAPI 3.1スペック生成 | [`recipe-45`](./ch08-skills-templates/recipe-45/) |
+| 46 | ドキュメント自動生成Skills | README生成とコードコメント・docstring生成 | [`recipe-46`](./ch08-skills-templates/recipe-46/) |
+| 47 | Headless実行用Skills | CI/CDパイプラインにSkillsを組み込む | [`recipe-47`](./ch08-skills-templates/recipe-47/) |
 | 48 | 活性化率を20%→84%に上げるテクニック | descriptionの書き方でSkillsの自動発動率を改善する | [`recipe-48`](./ch09-skills-tips/recipe-48/) |
 | 49 | !`command`で動的コンテキストを注入する | 前処理メカニズムで実行時の情報を自動収集する | [`recipe-49`](./ch09-skills-tips/recipe-49/) |
 | 50 | namespace設計 | プラグインのnamespace（plugin:skill-name）で名前衝突を回避する | [`recipe-50`](./ch09-skills-tips/recipe-50/) |
@@ -102,12 +121,15 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 54 | 段階的読み込みアーキテクチャ | ファイル分割でオンデマンド読み込みを実現しトークンを節約 | [`recipe-54`](./ch09-skills-tips/recipe-54/) |
 | 55 | フロントマターHooks | `SKILL.md`にスコープ付きHooksを定義する | [`recipe-55`](./ch09-skills-tips/recipe-55/) |
 
-### 第4部: サブエージェント実践レシピ
+</details>
+
+<details>
+<summary><strong>第4部: サブエージェント実践レシピ</strong>（22レシピ）</summary>
 
 | # | レシピ | 説明 | ディレクトリ |
 |---|--------|------|-------------|
-| 59 | カスタムエージェント定義 | .claude/agents/で専門エージェントを定義する | `ch10-subagents-basics/recipe-59-custom-agents/` |
-| 61 | 永続メモリパターン | `MEMORY.md`によるセッション横断の知識管理 | `ch10-subagents-basics/recipe-61-memory/` |
+| 59 | カスタムエージェント定義 | `.claude/agents/`で専門エージェントを定義する | [`recipe-59`](./ch10-subagents-basics/recipe-59-custom-agents/) |
+| 61 | 永続メモリパターン | `MEMORY.md`によるセッション横断の知識管理 | [`recipe-61`](./ch10-subagents-basics/recipe-61-memory/) |
 | 62 | 並列Exploreで大規模コードベースを高速調査 | 複数のExploreサブエージェントを並列起動しモジュール単位で同時調査 | [`recipe-62`](./ch11-subagent-dev/recipe-62-parallel-explore/) |
 | 63 | マルチファイルリファクタリングの自動化 | Explore（調査）+ general-purpose（実行）の2フェーズで安全にリファクタリング | [`recipe-63`](./ch11-subagent-dev/recipe-63-multi-file-refactoring/) |
 | 64 | Prompt Chainingと中間ゲート設計 | サブエージェントを順次呼び出すチェーン方式で品質を保つワークフロー構築 | [`recipe-64`](./ch11-subagent-dev/recipe-64-prompt-chaining/) |
@@ -126,21 +148,30 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 77 | 専門ロールパターン | PM/Architect/Developer/QAの4ロール定義 | [`recipe-77`](./ch12-agent-teams/recipe-77-role-pattern/) |
 | 78 | コスト最適化パターン | 18.75倍のモデル価格差を活かしたコスト最適化 | [`recipe-78`](./ch12-agent-teams/recipe-78-cost-optimization/) |
 
-### 第5部: Hooks実践レシピ
+</details>
+
+<details>
+<summary><strong>第5部: Hooks実践レシピ</strong>（12レシピ）</summary>
 
 | # | レシピ | 説明 | ディレクトリ |
 |---|--------|------|-------------|
-| 80-81 | Hooks基本設定 | `settings.json`でのHooks定義とマッチャーパターン | `ch13-hooks-basics/` |
+| 79 | 14のイベント種別と発火タイミング | Hooksの全ライフサイクルイベント一覧 | [`recipe-79`](./ch13-hooks-basics/recipe-79-events/) |
+| 80 | `settings.json`でHooksを定義する | 3層ネスト構造の基本設定 | [`recipe-80`](./ch13-hooks-basics/recipe-80-basic-setup/) |
+| 81 | マッチャーパターン | 正規表現でフックの発火条件を制御 | [`recipe-81`](./ch13-hooks-basics/recipe-81-matchers/) |
+| 82 | Hooksのデバッグ | `--debug`フラグと手動テスト | [`recipe-82`](./ch13-hooks-basics/recipe-82-debugging/) |
 | 83 | コミット前lint/format | PreToolUseフックで自動lint・フォーマット実行 | [`recipe-83`](./ch14-hooks-recipes/recipe-83-lint-format/) |
 | 84 | 危険コマンドブロック | rm -rfやforce push等の危険コマンドを検出・ブロック | [`recipe-84`](./ch14-hooks-recipes/recipe-84-danger-block/) |
-| 85 | 機密情報漏洩防止 | .envやAPIキーのコミット・出力を防止 | [`recipe-85`](./ch14-hooks-recipes/recipe-85-env-protection/) |
+| 85 | 機密情報漏洩防止 | パーミッション+Hooks+Gitの3層防御 | [`recipe-85`](./ch14-hooks-recipes/recipe-85-env-protection/) |
 | 86 | ファイル変更時テスト自動実行 | PostToolUseフックでテストを非同期実行 | [`recipe-86`](./ch14-hooks-recipes/recipe-86-auto-test/) |
 | 87 | デスクトップ/サウンド通知 | タスク完了時のデスクトップ・サウンド通知 | [`recipe-87`](./ch14-hooks-recipes/recipe-87-notifications/) |
-| 88 | Gitチェックポイント自動作成 | 一定間隔でgit commitを自動実行 | [`recipe-88`](./ch14-hooks-recipes/recipe-88-git-checkpoint/) |
+| 88 | Gitチェックポイント自動作成 | ファイル編集前にgit commitで復元ポイントを作成 | [`recipe-88`](./ch14-hooks-recipes/recipe-88-git-checkpoint/) |
 | 89 | prompt/agent型Hooks | prompt型・agent型による高度な条件制御 | [`recipe-89`](./ch14-hooks-recipes/recipe-89-prompt-agent/) |
 | 90 | Stop Hooks自動検証 | Evaluator-Optimizerパターンで品質を自動検証 | [`recipe-90`](./ch14-hooks-recipes/recipe-90-evaluator-optimizer/) |
 
-### 第6部: 統合 & パワーユーザーTIPS
+</details>
+
+<details>
+<summary><strong>第6部: 統合 & パワーユーザーTIPS</strong>（10レシピ）</summary>
 
 | # | レシピ | 説明 | ディレクトリ |
 |---|--------|------|-------------|
@@ -152,6 +183,8 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 97 | Docker隔離実行 | DockerとDevContainerでClaude Codeを安全に隔離 | [`recipe-97`](./ch16-power-user/recipe-97-docker/) |
 | 98 | ヘッドレスモード | バッチ処理やCI環境でのヘッドレス実行 | [`recipe-98`](./ch16-power-user/recipe-98-headless/) |
 | 100 | 究極のカスタマイズ戦略 | `CLAUDE.md`+Skills+Hooks+Agentsの統合設定テンプレート | [`recipe-100`](./ch16-power-user/recipe-100-ultimate-setup/) |
+
+</details>
 
 ## 動作確認環境
 
