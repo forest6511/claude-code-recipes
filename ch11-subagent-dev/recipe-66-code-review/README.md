@@ -9,7 +9,7 @@
 | `.claude/agents/code-reviewer.md` | コード品質とセキュリティのレビュー専用サブエージェント定義 |
 | `prompts/review-request.txt` | コードレビューの依頼・修正・再レビューのプロンプト例 |
 | `prompts/parallel-review.txt` | 複数の観点（セキュリティ/パフォーマンス/アーキテクチャ）を並列レビューするプロンプト例 |
-| `memory-example.md` | 永続メモリ（MEMORY.md）の蓄積例 |
+| `memory-example.md` | 永続メモリ（`MEMORY.md`）の蓄積例 |
 
 ## 使い方
 

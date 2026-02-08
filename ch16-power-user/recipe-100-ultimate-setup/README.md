@@ -1,6 +1,6 @@
 # レシピ100: 自分だけの開発環境を構築する
 
-本書で学んだCLAUDE.md、Skills、Hooks、サブエージェント、MCPの全技術を統合して、自分だけの開発環境を構築するカスタマイズ戦略です。4つのスコープの設定ファイルを段階的に整備していきます。
+本書で学んだ`CLAUDE.md`、Skills、Hooks、サブエージェント、MCPの全技術を統合して、自分だけの開発環境を構築するカスタマイズ戦略です。4つのスコープの設定ファイルを段階的に整備していきます。
 
 ## ファイル一覧
 
@@ -17,7 +17,7 @@
 | Managed | システムレベルの`managed-settings.json` | マシン全ユーザー | IT部門が配布 |
 | User | `~/.claude/settings.json` | 全プロジェクト共通 | 不可 |
 | Project | `.claude/settings.json` | このリポジトリの全員 | Git経由で共有 |
-| Local | `.claude/settings.local.json` | 自分だけ、このリポジトリ | 不可（.gitignore） |
+| Local | `.claude/settings.local.json` | 自分だけ、このリポジトリ | 不可（`.gitignore`） |
 
 優先順位: Managed > CLIフラグ > Local > Project > User
 
@@ -46,7 +46,7 @@ your-project/
 
 ## カスタマイズの段階的アプローチ
 
-1. **基盤**: CLAUDE.md + Rules + パーミッション設定
+1. **基盤**: `CLAUDE.md` + Rules + パーミッション設定
 2. **外部ツール連携**: MCPサーバーの設定（`.mcp.json`）
 3. **自動化**: Skillsとサブエージェントの定義
 4. **品質保証**: Hooksでコミット前チェック・危険コマンド防止
@@ -54,6 +54,6 @@ your-project/
 
 ## 注意事項
 
-- APIキーや個人的な設定は必ず `settings.local.json`（.gitignore対象）に記述してください
+- APIキーや個人的な設定は必ず `settings.local.json`（`.gitignore`対象）に記述してください
 - `settings.json`（Project scope）はGit管理対象です。機密情報を含めないでください
 - 設定はマージされます。上位スコープの設定を下位スコープで上書きできます

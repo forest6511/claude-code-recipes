@@ -9,11 +9,11 @@ Skillsの活性化率改善、動的コンテキスト注入、namespace設計�
 | 48 | 活性化率を20%→84%に上げるテクニック | descriptionの書き方でSkillsの自動発動率を改善する | [recipe-48](./recipe-48/) |
 | 49 | `` !`command` ``で動的コンテキストを注入する | 前処理メカニズムで実行時の情報を自動収集する | [recipe-49](./recipe-49/) |
 | 50 | namespace設計 | プラグインのnamespace（plugin:skill-name）で名前衝突を回避する | [recipe-50](./recipe-50/) |
-| 51 | Skills内でMCPサーバーのツールを指定する | ServerName:tool_name形式でMCPツールを確実に呼び出す | [recipe-51](./recipe-51/) |
+| 51 | Skills内でMCPサーバーのツールを指定する | ServerName:tool_name形式でMCPサーバーを確実に呼び出す | [recipe-51](./recipe-51/) |
 | 52 | SLASH_COMMAND_TOOL_CHAR_BUDGETを管理する | キャラクターバジェットの仕組みと調整方法（概念説明中心） | - |
 | 53 | サイレント失敗の原因と対処法 | Skillsが動作しない7つの典型パターンとデバッグ手順 | [recipe-53](./recipe-53/) |
 | 54 | 段階的読み込みアーキテクチャ | ファイル分割でオンデマンド読み込みを実現しトークンを節約 | [recipe-54](./recipe-54/) |
-| 55 | フロントマターHooks | SKILL.mdにスコープ付きHooksを定義する | [recipe-55](./recipe-55/) |
+| 55 | フロントマターHooks | `SKILL.md`にスコープ付きHooksを定義する | [recipe-55](./recipe-55/) |
 | 56 | モデル別のSkills動作差異とテスト戦略 | Haiku/Sonnet/Opusでの動作差異と最適化（概念説明中心） | - |
 
 ## 備考

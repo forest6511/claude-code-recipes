@@ -58,6 +58,6 @@ GitHub MCPのコード検索機能とClaude Codeのファイル参照を組み�
 
 ## 関連章
 
-- 第1章: CLAUDE.md & 設定最適化
+- 第1章: `CLAUDE.md` & 設定最適化
 - 第4章: ブラウザ自動化 & テスト（Playwright MCP）
 - 第7章: Skills設計と基本（カスタムSkills作成）

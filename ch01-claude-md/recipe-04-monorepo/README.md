@@ -25,6 +25,6 @@ cp packages/api/CLAUDE.md /path/to/your-monorepo/packages/api/CLAUDE.md
 
 ## カスタマイズ
 
-- **ルートCLAUDE.md**: パッケージマネージャ(pnpm/npm/yarn)、ビルドツール(Turborepo/Nx)に合わせる
-- **パッケージCLAUDE.md**: 各パッケージの技術スタックとコマンドに合わせる
+- **ルート`CLAUDE.md`**: パッケージマネージャ(pnpm/npm/yarn)、ビルドツール(Turborepo/Nx)に合わせる
+- **パッケージ`CLAUDE.md`**: 各パッケージの技術スタックとコマンドに合わせる
 - **条件付きルール**: `.claude/rules/`のpathsパターンをパッケージのディレクトリ構造に合わせる

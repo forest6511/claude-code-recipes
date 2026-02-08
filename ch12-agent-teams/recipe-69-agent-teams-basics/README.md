@@ -6,7 +6,7 @@ Agent Teamsを有効化し、リーダー・チームメイト構成でタスク
 
 | ファイル | 説明 |
 |---------|------|
-| `settings.json` | Agent Teamsを有効化するsettings.json設定 |
+| `settings.json` | Agent Teamsを有効化する`settings.json`設定 |
 | `prompts/team-creation.txt` | チーム構成の指示プロンプト例 |
 
 ## 使い方

@@ -8,7 +8,7 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash(npm *), Bash(node *)
 # README.md生成
 
 ## プロジェクト情報
-- package.json: !`cat package.json 2>/dev/null || echo "なし"`
+- `package.json`: !`cat package.json 2>/dev/null || echo "なし"`
 - ディレクトリ構造: !`ls -la src/ 2>/dev/null || ls -la 2>/dev/null`
 
 ## 手順

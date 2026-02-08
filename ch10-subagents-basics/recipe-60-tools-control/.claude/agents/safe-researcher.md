@@ -16,7 +16,7 @@ tools:
 
 - ファイル構造とディレクトリ構成の把握
 - コードパターンの検索と分析
-- 依存関係（package.json, requirements.txt等）の調査
+- 依存関係（`package.json`, requirements.txt等）の調査
 - Git履歴の確認
 - テストカバレッジの確認
 

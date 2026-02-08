@@ -6,7 +6,7 @@ Playwright MCPは、Microsoftが提供するブラウザ自動化のMCPサーバ
 
 | # | レシピ | 難易度 | 説明 | ディレクトリ |
 |---|--------|--------|------|-------------|
-| 18 | Playwright MCPのセットアップと基本操作 | ★☆☆ | .mcp.jsonの設定方法と基本的な操作フロー | [`recipe-18-setup`](./recipe-18-setup/) |
+| 18 | Playwright MCPのセットアップと基本操作 | ★☆☆ | `.mcp.json`の設定方法と基本的な操作フロー | [`recipe-18-setup`](./recipe-18-setup/) |
 | 19 | E2Eテストの自動生成と実行 | ★★☆ | testing Capabilityを使ったテストコード自動生成 | [`recipe-19-e2e-test`](./recipe-19-e2e-test/) |
 | 20 | Webサイトのスクレイピングと情報抽出 | ★★☆ | スナップショットとbrowser_evaluateによるデータ抽出 | --- |
 | 21 | フォーム入力とUI操作の自動化 | ★★☆ | browser_fill_formによる一括入力とダイアログ処理 | --- |

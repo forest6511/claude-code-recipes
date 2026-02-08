@@ -45,8 +45,8 @@ server.registerTool(
     return {
       content: [
         {
-          type: "text" as const,
-          text: JSON.stringify({ id, message: `タスク「${title}」を追加しました` }),
+          type: "text",
+          text: JSON.stringify(todo, null, 2),
         },
       ],
     };
@@ -58,16 +58,29 @@ server.registerTool(
   "list_todos",
   {
     description:
-      "登録されているタスクの一覧を取得します。パラメータは不要です。タスクがない場合は空の配列を返します。",
-    inputSchema: {},
+      "タスクの一覧を取得します。statusでフィルタリングできます。",
+    inputSchema: {
+      status: z
+        .enum(["all", "completed", "pending"])
+        .default("all")
+        .describe("フィルタ条件: all=全件, completed=完了済み, pending=未完了"),
+    },
   },
-  async () => {
-    const allTodos = Array.from(todos.values());
+  async ({ status }) => {
+    let result = Array.from(todos.values());
+    if (status === "completed") {
+      result = result.filter((t) => t.completed);
+    } else if (status === "pending") {
+      result = result.filter((t) => !t.completed);
+    }
     return {
       content: [
         {
-          type: "text" as const,
-          text: JSON.stringify(allTodos, null, 2),
+          type: "text",
+          text:
+            result.length === 0
+              ? "タスクはありません。"
+              : JSON.stringify(result, null, 2),
         },
       ],
     };
@@ -79,9 +92,9 @@ server.registerTool(
   "complete_todo",
   {
     description:
-      "指定されたIDのタスクを完了状態にします。存在しないIDの場合はエラーを返します。",
+      "指定されたIDのタスクを完了状態にします。IDはtodo_で始まる文字列です。",
     inputSchema: {
-      id: z.string().describe("完了にするタスクのID（例: todo_1）"),
+      id: z.string().describe("タスクのID（例: todo_1）"),
     },
   },
   async ({ id }) => {
@@ -90,8 +103,8 @@ server.registerTool(
       return {
         content: [
           {
-            type: "text" as const,
-            text: `エラー: タスクID「${id}」が見つかりません。list_todosで現在のタスク一覧を確認してください。`,
+            type: "text",
+            text: `エラー: ID '${id}' のタスクが見つかりません。list_todosで有効なIDを確認してください。`,
           },
         ],
         isError: true,
@@ -101,11 +114,8 @@ server.registerTool(
     return {
       content: [
         {
-          type: "text" as const,
-          text: JSON.stringify({
-            id,
-            message: `タスク「${todo.title}」を完了にしました`,
-          }),
+          type: "text",
+          text: JSON.stringify(todo, null, 2),
         },
       ],
     };

@@ -6,7 +6,7 @@ WHY（プロジェクト概要）、WHAT（ルール・規約）、HOW（コマ�
 
 | ファイル | 説明 |
 |---------|------|
-| `CLAUDE.md` | ECサイトバックエンドAPIのCLAUDE.md実例 |
+| `CLAUDE.md` | ECサイトバックエンドAPIの`CLAUDE.md`実例 |
 
 ## 使い方
 

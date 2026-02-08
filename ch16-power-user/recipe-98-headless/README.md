@@ -7,7 +7,7 @@
 | ファイル | 説明 |
 |---------|------|
 | `review-changes.sh` | mainブランチとの差分を自動レビューするスクリプト |
-| `package-snippet.json` | package.jsonにClaude Codeをlintツールとして組み込む例 |
+| `package-snippet.json` | `package.json`にClaude Codeをlintツールとして組み込む例 |
 
 ## 使い方
 
