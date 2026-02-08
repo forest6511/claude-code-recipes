@@ -86,7 +86,7 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | 18 | Playwright MCPセットアップ | `.mcp.json`の設定方法と基本的な操作フロー | [`recipe-18`](./ch04-playwright/recipe-18-setup/) |
 | 19 | E2Eテスト自動生成 | testing Capabilityを使ったテストコード自動生成 | [`recipe-19`](./ch04-playwright/recipe-19-e2e-test/) |
 | 22 | アクセシビリティテスト | WCAG 2.1準拠チェックとレポート生成 | [`recipe-22`](./ch04-playwright/recipe-22-a11y-test/) |
-| 23 | PostgreSQL MCP | `.mcp.json`とサンプルスキーマの設定例 | [`mcp-configs`](./ch05-database/mcp-configs/) |
+| 23 | PostgreSQL MCP | `.mcp.json`とサンプルスキーマの設定例 | [`recipe-23`](./ch05-database/recipe-23-postgresql-mcp/) |
 | 29 | MCPサーバー設計 --- ACI原則 | ACI設計原則に基づくMCPサーバー設計ガイド | [`recipe-29`](./ch06-mcp-development/recipe-29-aci-design/) |
 | 30 | TypeScript MCPサーバー | MCP SDK v1.xでタスク管理サーバーを実装 | [`recipe-30`](./ch06-mcp-development/recipe-30-typescript-mcp/) |
 | 31 | Python MCPサーバー | FastMCPでファイル分析サーバーを実装 | [`recipe-31`](./ch06-mcp-development/recipe-31-python-mcp/) |
