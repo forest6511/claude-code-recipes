@@ -1,12 +1,7 @@
 ---
 name: debugger
 description: バグ調査と修正を専門とするデバッグエージェント
-tools:
-  - Read
-  - Edit
-  - Bash
-  - Grep
-  - Glob
+tools: Read, Edit, Bash, Grep, Glob
 ---
 
 # Debugger Agent

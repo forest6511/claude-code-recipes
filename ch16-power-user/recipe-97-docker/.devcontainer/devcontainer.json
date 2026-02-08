@@ -9,7 +9,7 @@
     },
     "ghcr.io/devcontainers/features/git:1": {}
   },
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code",
+  "postCreateCommand": "curl -fsSL https://claude.ai/install.sh | bash",
   "customizations": {
     "vscode": {
       "extensions": [

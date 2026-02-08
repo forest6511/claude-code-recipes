@@ -2,11 +2,7 @@
 name: code-reviewer
 description: コード品質とセキュリティのレビューを実施する専門エージェント
 model: sonnet
-tools:
-  - Read
-  - Glob
-  - Grep
-  - Bash
+tools: Read, Glob, Grep, Bash
 ---
 
 # Code Reviewer Agent

@@ -3,11 +3,7 @@ name: memory-reviewer
 description: プロジェクトの知識を蓄積しながらコードレビューを行うエージェント
 model: sonnet
 memory: project
-tools:
-  - Read
-  - Glob
-  - Grep
-  - Bash
+tools: Read, Glob, Grep, Bash
 ---
 
 # Memory-Enhanced Code Reviewer

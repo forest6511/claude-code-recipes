@@ -1,11 +1,7 @@
 ---
 name: safe-researcher
 description: コードベースの調査を読み取り専用で安全に実行するエージェント
-tools:
-  - Read
-  - Grep
-  - Glob
-  - Bash
+tools: Read, Grep, Glob, Bash
 ---
 
 # Safe Researcher Agent

@@ -1,8 +1,7 @@
 ---
 name: db-reader
 description: データベースの読み取り専用クエリを実行する安全なエージェント
-tools:
-  - Bash
+tools: Bash
 ---
 
 # Database Reader Agent
