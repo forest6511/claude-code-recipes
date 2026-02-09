@@ -230,7 +230,7 @@ Agent Teamsは実験的機能です。`settings.json`で`"agentTeams": true`を�
 
 ## 動作確認環境
 
-- Claude Code: 執筆時点（2026年3月）の最新版
+- Claude Code: 執筆時点（2026年2月）の最新版
 - Node.js: 20+
 - Python: 3.11+
 
