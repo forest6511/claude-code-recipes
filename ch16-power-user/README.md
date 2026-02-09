@@ -1,26 +1,31 @@
 # 第16章: パワーユーザーTIPS集
 
-Docker隔離実行、ヘッドレスモード、究極のカスタマイズ戦略で、Claude Codeの活用をさらに高度化するTIPS集です。
+Docker隔離実行、ヘッドレスモード、究極のカスタマイズ戦略でClaude Codeの活用を高度化するTIPS集です。
 
-## レシピ一覧
+## レシピ一覧（5件）
 
-| # | レシピ | 説明 |
-|---|--------|------|
-| 96 | キーボードショートカット完全ガイド & Vim mode活用 | *書籍本文で解説（サンプルコードなし）* |
-| 97 | [Docker/DevContainerで安全に隔離実行](./recipe-97-docker/) | DevContainer+ファイアウォール+サンドボックスの多層防御を構築する |
-| 98 | [ヘッドレスモードとシェルスクリプト連携](./recipe-98-headless/) | `-p`フラグでClaude CodeをUnixパイプラインに組み込む |
-| 99 | スクリーンショット&画像でUIデバッグ・コード生成 | *書籍本文で解説（サンプルコードなし）* |
-| 100 | [自分だけの開発環境を構築する](./recipe-100-ultimate-setup/) | 本書の全技術を統合して4スコープの設定を段階的に整備する |
+| # | レシピ | 難易度 | 説明 |
+|---|--------|--------|------|
+| 96 | [キーボードショートカット完全ガイド & Vim mode活用](./recipe-96/) | ★☆☆ | 基本操作・モデル制御・Vim modeの効率的な使い方 |
+| 97 | [Docker/DevContainerでClaude Codeを安全に隔離実行する](./recipe-97/) | ★★★ | DevContainer設定とサンドボックスによる多層防御 |
+| 98 | [ヘッドレスモードとシェルスクリプト連携](./recipe-98/) | ★★★ | -pフラグでUnixツールチェーンとの連携 |
+| 99 | [スクリーンショット＆画像でUIデバッグ・コード生成する](./recipe-99/) | ★★☆ | マルチモーダル入力による視覚的なデバッグ |
+| 100 | [自分だけの開発環境を構築する](./recipe-100/) | ★★☆ | 4スコープの設定統合と段階的カスタマイズ |
 
-## 使い方
+## 前提条件
+
+- Claude Code: 最新版
+- Docker: 隔離実行時（レシピ97）
+- bubblewrap, socat: Linuxサンドボックス時
+
+## クイックスタート
 
 ```bash
-# 例: DevContainer設定をプロジェクトにコピー
-cp -r recipe-97-docker/.devcontainer /path/to/your-project/
-
-# 例: ヘッドレスモードのレビュースクリプトをコピー
-cp recipe-98-headless/review-changes.sh /path/to/your-project/scripts/
-chmod +x /path/to/your-project/scripts/review-changes.sh
+# ヘッドレスモードでコードレビュー
+claude -p "mainブランチとの差分をレビューして" --output-format text
 ```
 
-レシピ96、99は操作解説が中心のため、書籍本文を参照してください。
+## 備考
+
+- レシピ96、99は操作解説が中心のためサンプルコードがありません
+- 詳しい解説は書籍本文を参照してください

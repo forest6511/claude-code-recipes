@@ -1,22 +1,51 @@
 # 第7章: Skills設計と基本
 
-Claude Codeの機能を拡張する`SKILL.md`ファイルのパターン集です。基本構造から動的パラメータ、サブエージェント連携、外部Skillsの導入まで5つのレシピで土台を築きます。
+`SKILL.md`ファイルの基本構造から動的パラメータ、サブエージェント連携まで、5つのレシピでSkillsの土台を築きます。Skillsは必要な場面で自動的に読み込まれるか、スラッシュコマンド（`/skill-name`）で直接呼び出せます。
 
-## レシピ一覧
+## レシピ一覧（5件）
 
-| # | レシピ | 説明 |
-|---|--------|------|
-| 35 | [`SKILL.md`の基本構造](./recipe-35-basic-structure/) | フロントマターとマークダウン本文の役割を理解する |
-| 36 | [初めてのカスタムSkills](./recipe-36-first-skill/) | コミットメッセージ生成とコード説明のSkillsを作成する |
-| 37 | [$ARGUMENTSで動的パラメータ](./recipe-37-arguments/) | 引数展開と`` !`command` ``で動的なSkillsを作る |
-| 38 | [context:forkでサブエージェント実行](./recipe-38-context-fork/) | メインコンテキストを消費せず重い処理を分離する |
-| 39 | 公式・第三者のSkillsを安全に導入する | *書籍本文で解説（サンプルコードなし）* |
+| # | レシピ | 難易度 | 説明 |
+|---|--------|--------|------|
+| 35 | [SKILL.mdの基本構造とfrontmatterを理解する](./recipe-35-basic-structure/) | ★☆☆ | フロントマターと配置場所によるスコープ制御 |
+| 36 | [初めてのカスタムSkillsを作る](./recipe-36-first-skill/) | ★☆☆ | コミットメッセージ生成Skillsの作成手順 |
+| 37 | [$ARGUMENTSで動的パラメータを受け取るSkillsを作る](./recipe-37-arguments/) | ★★☆ | 引数展開と動的コンテキスト注入 |
+| 38 | [context:forkでサブエージェント実行するSkillsを作る](./recipe-38-context-fork/) | ★★☆ | 独立コンテキストでの重い処理の分離実行 |
+| 39 | 公式・第三者のSkillsを安全に導入する | ★☆☆ | プラグインとSkillsの安全な導入方法 |
 
-## 使い方
+## 前提条件
+
+- Claude Code: 最新版
+
+## クイックスタート
 
 ```bash
-# 例: コミットメッセージ生成Skillsをプロジェクトに追加
-cp -r recipe-36-first-skill/commit-message /path/to/your-project/.claude/skills/commit-message
+# プロジェクトSkillsの作成
+mkdir -p .claude/skills/commit-message
+cat > .claude/skills/commit-message/SKILL.md << 'EOF'
+---
+name: commit-message
+description: ステージされた変更からコミットメッセージを生成する
+disable-model-invocation: true
+allowed-tools: Bash(git diff *), Bash(git log *)
+---
+
+# コミットメッセージ生成
+
+ステージされた変更を分析し、Conventional Commitsに従ったコミットメッセージを生成します。
+EOF
+
+# Skillsの呼び出し
+claude
+> /commit-message
+
+# 個人用Skillsの作成（全プロジェクト共通）
+mkdir -p ~/.claude/skills/explain-code
+# ~/.claude/skills/explain-code/SKILL.md を作成
 ```
 
-各`SKILL.md`ファイルはそのまま`.claude/skills/`にコピーして使えます。
+## 備考
+
+- レシピ39は概念説明中心のため、サンプルコードはありません
+- SkillsはAgent Skillsオープンスタンダード（agentskills.io）に準拠しています
+- 第三者のSkillsを導入する際は`allowed-tools`と`!`command``を必ず確認してください
+- 詳しい解説は書籍本文を参照してください

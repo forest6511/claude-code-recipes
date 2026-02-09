@@ -2,6 +2,12 @@
 
 このリポジトリは書籍「Claude Code実践レシピ」のサンプルコード集です。
 
+## 貢献について
+
+- **バグ報告・誤り指摘**: [Issues](https://github.com/forest6511/claude-code-recipes/issues)で受け付けています
+- **新規レシピの追加**: 書籍との整合性のため、PRは受け付けておりません
+- **質問**: [Issues](https://github.com/forest6511/claude-code-recipes/issues)で「question」ラベルを付けてください
+
 ## API KEYの取り扱い
 
 **絶対にAPIキーや機密情報をコミットしないでください。**

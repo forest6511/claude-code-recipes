@@ -18,13 +18,22 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 | やりたいこと | レシピ | 章 |
 |-------------|--------|---|
 | プロジェクトに`CLAUDE.md`を導入したい | [#01](./ch01-claude-md/recipe-01-effective-claude-md/) | 第1章 |
+| コンテキスト使用量を確認したい | [#07](./ch02-context-cost/recipe-07/) | 第2章 |
+| APIコストを削減したい | [#10](./ch02-context-cost/recipe-10/) | 第2章 |
+| Web検索をClaude Codeに統合したい | [#13](./ch03-github-search/recipe-13-brave-search/) | 第3章 |
+| GitHubのIssue・PRを自動化したい | [#14](./ch03-github-search/recipe-14-github-mcp/) | 第3章 |
+| E2Eテストを自動生成したい | [#19](./ch04-playwright/recipe-19-e2e-test/) | 第4章 |
 | MCPサーバーを自作したい（TypeScript） | [#30](./ch06-mcp-development/recipe-30-typescript-mcp/) | 第6章 |
 | Skillsを初めて作りたい | [#36](./ch07-skills-basics/recipe-36-first-skill/) | 第7章 |
+| Skillsの活性化率を上げたい | [#48](./ch09-skills-tips/recipe-48/) | 第9章 |
 | Skillsが動かない原因を知りたい | [#53](./ch09-skills-tips/recipe-53/) | 第9章 |
 | カスタムエージェントを定義したい | [#59](./ch10-subagents-basics/recipe-59-custom-agents/) | 第10章 |
+| 永続メモリを実装したい | [#61](./ch10-subagents-basics/recipe-61-memory/) | 第10章 |
 | Agent Teamsで並列開発したい | [#69](./ch12-agent-teams/recipe-69-agent-teams-basics/) | 第12章 |
+| Git Worktreeで並列ブランチ開発したい | [#72](./ch12-agent-teams/recipe-72-worktree/) | 第12章 |
 | コミット前に自動lintを実行したい | [#83](./ch14-hooks-recipes/recipe-83-lint-format/) | 第14章 |
 | 危険なコマンドをブロックしたい | [#84](./ch14-hooks-recipes/recipe-84-danger-block/) | 第14章 |
+| 品質ゲートパイプラインを構築したい | [#91](./ch15-workflows/recipe-91-quality-gate/) | 第15章 |
 | CI/CDにClaude Codeを組み込みたい | [#93](./ch15-workflows/recipe-93-ci-cd/) | 第15章 |
 | Docker/DevContainerで安全に実行したい | [#97](./ch16-power-user/recipe-97-docker/) | 第16章 |
 
@@ -186,11 +195,46 @@ cp claude-code-recipes/ch01-claude-md/recipe-01-effective-claude-md/CLAUDE.md ./
 
 </details>
 
+## 必要な環境変数
+
+以下の環境変数は、対応するレシピを使用する場合に設定が必要です。
+
+| 変数名 | 用途 | 取得先 | 使用レシピ |
+|--------|------|--------|-----------|
+| `BRAVE_API_KEY` | Brave Search MCP | [Brave Search API](https://brave.com/search/api/) | #13 |
+| `GITHUB_TOKEN` | GitHub MCP | GitHub Settings > Developer settings > Personal access tokens | #14, #15 |
+| `POSTGRES_URL` | PostgreSQL MCP | 自環境のDB接続文字列 | #23 |
+| `NOTION_API_KEY` | Notion MCP | [Notion Integrations](https://www.notion.so/my-integrations) | #26 |
+| `ANTHROPIC_API_KEY` | GitHub Actions連携 | [Anthropic Console](https://console.anthropic.com/) | #15, #93 |
+
+> **Tip**: `.envrc`（direnv）や`~/.zshrc`で環境変数を管理し、`.mcp.json`では`${VAR_NAME}`のプレースホルダーを使用することを推奨します。
+
+## FAQ
+
+### Q: MCPサーバーが認識されない
+`.mcp.json`の配置場所を確認してください。プロジェクトスコープの場合はプロジェクトルート、ユーザースコープの場合は`~/.claude/.mcp.json`です。`/mcp`コマンドで接続状況を確認できます。詳細は書籍の付録Cを参照してください。
+
+### Q: Hooksスクリプトが実行されない
+1. 実行権限を確認してください（`chmod +x scripts/your-hook.sh`）
+2. `settings.json`の`hooks`セクションでパスが正しいか確認してください
+3. `claude --debug`で実行し、Hooksの発火状況を確認してください
+
+### Q: Skillsが発動しない
+レシピ#53「サイレント失敗の原因と対処法」で7つの典型パターンを解説しています。特に多いのはフロントマターの構文エラーと、descriptionの不足です。
+
+### Q: サンプルコードが動かない
+書籍の執筆時点のClaude Codeバージョンと現在のバージョンが異なる可能性があります。[Issues](https://github.com/forest6511/claude-code-recipes/issues)で報告いただければ対応を検討します。
+
+### Q: Agent Teamsが有効にならない
+Agent Teamsは実験的機能です。`settings.json`で`"agentTeams": true`を設定し、Claude Codeを再起動してください。詳細はレシピ#69を参照してください。
+
 ## 動作確認環境
 
-- Claude Code: 執筆時点の最新版（各レシピに記載）
+- Claude Code: 執筆時点（2026年3月）の最新版
 - Node.js: 20+
 - Python: 3.11+
+
+> **Note**: Claude Codeは頻繁にアップデートされます。サンプルが動作しない場合は[Issues](https://github.com/forest6511/claude-code-recipes/issues)でご報告ください。
 
 ## 書籍情報
 
