@@ -240,8 +240,8 @@ Agent Teamsは実験的機能です。`settings.json`で`"agentTeams": true`を�
 
 - **タイトル**: Claude Code実践レシピ
 - **著者**: 森川 陽介
-- **出版**: Kindle（2026年4月予定）
-- **前作**: [Claude Codeではじめる開発入門](https://www.amazon.co.jp/dp/B0F2T3B8GR)
+- **出版**: Kindle（2026年2月予定）
+- **前作**: [Claude Codeではじめる開発入門](https://www.amazon.co.jp/dp/B0GM8ZSWLZ)
 
 ## ライセンス
 
