@@ -6,11 +6,11 @@ MCP、Skills、サブエージェント、Hooksを統合したプロジェクト
 
 | # | レシピ | 難易度 | 説明 |
 |---|--------|--------|------|
-| 91 | [MCP+Skills+Hooksで作る品質ゲートパイプライン](./recipe-91/) | ★★★ | 生成→評価→改善の自動反復パイプライン |
-| 92 | [Spec駆動開発ワークフロー](./recipe-92/) | ★★★ | 仕様→設計→実装→テストの4フェーズをPlan Modeで管理 |
-| 93 | [CI/CDパイプラインにClaude Codeを組み込む](./recipe-93/) | ★★★ | GitHub ActionsでPRレビュー・Issue対応を自動化 |
-| 94 | [Issue駆動開発ワークフローを構築する](./recipe-94/) | ★★☆ | Issue→ブランチ→実装→PRの一連フローを効率化 |
-| 95 | [マルチセッション・チーム開発パターン](./recipe-95/) | ★★★ | Git Worktree、セッション管理、チーム共有設定 |
+| 91 | [MCP+Skills+Hooksで作る品質ゲートパイプライン](./recipe-91-quality-gate/) | ★★★ | 生成→評価→改善の自動反復パイプライン |
+| 92 | [Spec駆動開発ワークフロー](./recipe-92-spec-driven/) | ★★★ | 仕様→設計→実装→テストの4フェーズをPlan Modeで管理 |
+| 93 | [CI/CDパイプラインにClaude Codeを組み込む](./recipe-93-ci-cd/) | ★★★ | GitHub ActionsでPRレビュー・Issue対応を自動化 |
+| 94 | [Issue駆動開発ワークフローを構築する](./recipe-94-issue-driven/) | ★★☆ | Issue→ブランチ→実装→PRの一連フローを効率化 |
+| 95 | [マルチセッション・チーム開発パターン](./recipe-95-multi-session/) | ★★★ | Git Worktree、セッション管理、チーム共有設定 |
 
 ## 前提条件
 
