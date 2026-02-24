@@ -46,3 +46,17 @@ claude mcp add --transport stdio --scope project \
 ## 設定ファイル
 
 `.mcp.json`の内容は以下の通りです。
+
+```json
+{
+  "mcpServers": {
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+      }
+    }
+  }
+}
+```

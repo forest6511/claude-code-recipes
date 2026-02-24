@@ -44,3 +44,14 @@ claude mcp add --transport http github https://api.githubcopilot.com/mcp/
 ## 設定ファイル
 
 `.mcp.json`でチーム共有する場合の設定例です。各開発者が`/mcp`コマンドで個別に認証を行います。
+
+```json
+{
+  "mcpServers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    }
+  }
+}
+```
