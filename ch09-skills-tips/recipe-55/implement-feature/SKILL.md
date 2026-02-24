@@ -1,6 +1,5 @@
 ---
 name: implement-feature
-description: 機能を実装する
 disable-model-invocation: true
 hooks:
   PostToolUse:

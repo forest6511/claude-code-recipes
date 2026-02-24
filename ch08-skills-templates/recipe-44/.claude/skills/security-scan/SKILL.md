@@ -35,7 +35,7 @@ Semgrepが検出できない以下の項目を追加で確認してください�
 - エラーメッセージでの内部情報露出
 
 ### 依存関係
-- `package.json` / requirements.txt の既知の脆弱性
+- `package.json` / `requirements.txt` の既知の脆弱性
 
 ## ステップ3: 結果の統合と報告
 

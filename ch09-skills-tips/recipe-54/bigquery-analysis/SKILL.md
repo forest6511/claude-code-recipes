@@ -11,10 +11,10 @@ allowed-tools: Read, Grep, Glob, Bash(python *)
 
 ## 利用可能なデータセット
 
-**財務**: 売上、ARR、課金 → [reference/finance.md](reference/finance.md)を参照
-**営業**: 商談、パイプライン、アカウント → [reference/sales.md](reference/sales.md)を参照
-**プロダクト**: API利用、機能利用率 → [reference/product.md](reference/product.md)を参照
-**マーケティング**: キャンペーン、アトリビューション → [reference/marketing.md](reference/marketing.md)を参照
+**財務**: 売上、ARR、課金 -> [reference/finance.md](reference/finance.md)を参照
+**営業**: 商談、パイプライン、アカウント -> [reference/sales.md](reference/sales.md)を参照
+**プロダクト**: API利用、機能利用率 -> [reference/product.md](reference/product.md)を参照
+**マーケティング**: キャンペーン、アトリビューション -> [reference/marketing.md](reference/marketing.md)を参照
 
 ## クイック検索
 

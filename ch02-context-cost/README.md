@@ -11,7 +11,7 @@
 | 09 | [モデル選択戦略](./recipe-09/) | ★★☆ | Opus・Sonnet・Haiku・opusplanのタスク別使い分け |
 | 10 | [トークン消費を削減するプロンプトテクニック](./recipe-10/) | ★★☆ | 具体的なプロンプトと`CLAUDE.md`簡潔化でコスト削減 |
 | 11 | [/cost・/usage・/statsでコストを可視化・管理する](./recipe-11/) | ★☆☆ | コストをリアルタイム表示するステータスラインスクリプト |
-| 12 | [セッション管理](./recipe-12/) | ★★☆ | /continue・/resume・/rewindの使い分けガイド |
+| 12 | [セッション管理 -- --continue・/resume・/rewindの使い分け](./recipe-12/) | ★★☆ | --continue・/resume・/rewindの使い分けガイド |
 
 ## 前提条件
 

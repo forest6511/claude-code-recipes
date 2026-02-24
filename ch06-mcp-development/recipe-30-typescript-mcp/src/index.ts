@@ -30,7 +30,7 @@ server.registerTool(
         .string()
         .min(1)
         .max(200)
-        .describe("タスクのタイトル（1〜200文字）"),
+        .describe("タスクのタイトル（1~200文字）"),
     },
   },
   async ({ title }) => {
