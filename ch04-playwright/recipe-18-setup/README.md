@@ -30,7 +30,7 @@ MCP Servers:
 ## CLIから追加する場合
 
 ```bash
-claude mcp add playwright npx @playwright/mcp@latest
+claude mcp add --transport stdio playwright -- npx @playwright/mcp@latest
 ```
 
 ## 主要オプション

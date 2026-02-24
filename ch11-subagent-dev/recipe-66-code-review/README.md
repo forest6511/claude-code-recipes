@@ -46,4 +46,4 @@ cp -r .claude /path/to/your-project/
 
 - レシピ59「カスタムエージェントを定義する」
 - レシピ61「永続メモリパターン」
-- レシピ82「SubagentStart/SubagentStopフックで制御する」
+- レシピ79「14のイベント種別と発火タイミングを理解する」

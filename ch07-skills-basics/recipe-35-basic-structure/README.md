@@ -22,8 +22,11 @@ Claude Codeで `/review-code` と入力するか、コードレビュー文脈�
 |-----------|------|-----------|
 | `name` | `/name`で呼び出す際の名前 | ディレクトリ名 |
 | `description` | 自動読み込み判断に使用する説明文 | 本文の最初の段落 |
+| `argument-hint` | オートコンプリート時に表示するヒント | なし |
 | `disable-model-invocation` | `true`で自動読み込みを無効化 | `false` |
 | `user-invocable` | `false`で`/`メニューから非表示 | `true` |
 | `allowed-tools` | 許可確認なしで使えるツール | なし |
 | `model` | 使用するモデル | 現在のモデル |
 | `context` | `fork`でサブエージェント実行 | インライン実行 |
+| `agent` | `context: fork`時のエージェント種別 | `general-purpose` |
+| `hooks` | Skillsのライフサイクルにスコープされたフック | なし |
