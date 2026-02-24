@@ -1,6 +1,6 @@
 # Claude Code実践レシピ サンプルコード
 
-書籍「**Claude Code実践レシピ** --- MCP・Skills・Hooks・サブエージェントを自在に操る」（森川 陽介 著）のサンプルコード・設定ファイル集です。
+書籍「**[Claude Code実践レシピ100本: MCP/Skills/Hooks/サブエージェント実践ガイド](https://www.amazon.co.jp/dp/B0GMQ18MFR)**」（森川 陽介 著）のサンプルコード・設定ファイル集です。
 
 ## 使い方
 
@@ -238,11 +238,12 @@ Agent Teamsは実験的機能です。`settings.json`で`"agentTeams": true`を�
 
 ## 書籍情報
 
-- **タイトル**: Claude Code実践レシピ
+- **タイトル**: [Claude Code実践レシピ100本: MCP/Skills/Hooks/サブエージェント実践ガイド](https://www.amazon.co.jp/dp/B0GMQ18MFR)
 - **著者**: 森川 陽介
-- **出版**: Kindle（2026年2月予定）
+- **出版**: Kindle（2026年2月）
 - **前作**: [Claude Codeではじめる開発入門](https://www.amazon.co.jp/dp/B0GM8ZSWLZ)
 
 ## ライセンス
 
 MIT License --- 詳細は [LICENSE](./LICENSE) を参照してください。
+
