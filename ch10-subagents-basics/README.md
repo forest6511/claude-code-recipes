@@ -23,7 +23,7 @@
 mkdir -p .claude/agents
 
 # サンプルエージェントをコピー
-cp -r path/to/recipe-59-custom-agents/code-reviewer.md .claude/agents/
+cp recipe-59-custom-agents/.claude/agents/code-reviewer.md .claude/agents/
 
 # エージェント一覧を確認
 > /agents
