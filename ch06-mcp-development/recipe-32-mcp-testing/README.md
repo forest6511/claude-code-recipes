@@ -7,11 +7,11 @@ MCP InspectorとClaude Codeの`/mcp`コマンドを使った、MCPサーバー�
 ### 1. MCP Inspectorでサーバー単体テスト
 
 ```bash
-# TypeScriptサーバーのテスト
-npx @modelcontextprotocol/inspector node /path/to/build/index.js
+# TypeScriptサーバーのテスト（ビルド後のディレクトリで実行）
+npx @modelcontextprotocol/inspector node ./build/index.js
 
-# Pythonサーバーのテスト
-npx @modelcontextprotocol/inspector uv --directory /path/to/project run server.py
+# Pythonサーバーのテスト（プロジェクトディレクトリで実行）
+npx @modelcontextprotocol/inspector uv --directory . run server.py
 
 # npmパッケージのテスト
 npx @modelcontextprotocol/inspector npx @modelcontextprotocol/server-filesystem /tmp

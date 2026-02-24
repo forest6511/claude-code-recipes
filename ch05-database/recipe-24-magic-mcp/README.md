@@ -12,12 +12,11 @@
 
 1. 21st.devでAPIキーを取得します。
 
-```text
-1. https://21st.dev/magic/console にアクセス
-2. アカウントを作成またはログイン
-3. APIキーを生成
-4. 環境変数に設定:
-   export TWENTY_FIRST_API_KEY="your-api-key"
+1. https://21st.dev/magic/console にアクセスしてアカウントを作成・ログインし、APIキーを生成します。
+2. 環境変数に設定します。
+
+```bash
+export TWENTY_FIRST_API_KEY="your-api-key"
 ```
 
 2. CLIでインストールします（推奨）。

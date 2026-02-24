@@ -30,10 +30,10 @@ npm install -D @types/node typescript
 
 # ビルドとClaude Codeへの登録
 npm run build
-claude mcp add --transport stdio todo-server -- node /path/to/build/index.js
+claude mcp add --transport stdio todo-server -- node "$(pwd)/build/index.js"
 
 # MCP Inspectorでテスト
-npx @modelcontextprotocol/inspector node /path/to/build/index.js
+npx @modelcontextprotocol/inspector node "$(pwd)/build/index.js"
 
 # Python MCPサーバーの作成
 uv init file-analyzer && cd file-analyzer
@@ -41,7 +41,7 @@ uv venv && source .venv/bin/activate
 uv add "mcp[cli]"
 
 # Claude Codeへの登録
-claude mcp add --transport stdio file-analyzer -- uv --directory /path/to/file-analyzer run file_analyzer.py
+claude mcp add --transport stdio file-analyzer -- uv --directory "$(pwd)" run file_analyzer.py
 ```
 
 ## 備考
