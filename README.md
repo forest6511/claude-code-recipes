@@ -242,6 +242,7 @@ Agent Teamsは実験的機能です。`settings.json`で`"agentTeams": true`を�
 - **著者**: 森川 陽介
 - **出版**: Kindle（2026年2月）
 - **前作**: [Claude Codeではじめる開発入門](https://www.amazon.co.jp/dp/B0GM8ZSWLZ)
+- **English Edition**: [Claude Code Cookbook: 100 Practical Recipes for MCP, Skills, Hooks & Sub-Agents](https://www.amazon.com/dp/B0GM9QFGXJ)
 
 ## ライセンス
 
