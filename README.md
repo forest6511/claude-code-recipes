@@ -4,11 +4,11 @@
 
 > **📘 第2版（v5）をお読みの方へ**
 >
-> 2026 年内に出版予定の **第2版** 向けのサンプルコードは、別リポジトリに分離しています:
+> 第2版向けのサンプルコードは別リポジトリに分離しています:
 >
 > → [forest6511/claude-code-recipes-v2](https://github.com/forest6511/claude-code-recipes-v2)
 >
-> **本リポ（v1）は初版向けに据え置き**。初版（ASIN: B0GMQ18MFR）の読者は引き続き本リポをご利用ください。第2版（Agent Teams evals / Harness Engineering / Channels / Computer Use / Routines 等の新機能を収録）の読者は v2 リポを参照してください。
+> **本リポ（v1）は初版向けに据え置き**。初版の読者は引き続き本リポをご利用ください。第2版（Agent Teams evals / Harness Engineering / Channels / Computer Use / Routines 等の新機能を収録）の読者は v2 リポを参照してください。
 
 ## 使い方
 
